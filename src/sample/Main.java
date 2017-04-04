@@ -277,14 +277,14 @@ public class Main extends Application {
     public int robotTextY = 50;
     public int robotTextX = 5;
 
-    public int startX = 18;
-    public int startY = 45;
-    public int incrX = 60;
-    public int incrY = 27;
+    public int startX = 5;
+    public int startY = 38;
+    public int incrX = 45;
+    public int incrY = 25;
     public int currX = startX;
     public int currY = startY;
-    public int columns = 2;
-    public int robotColumns = 2;
+    public int columns = 3;
+    public int robotColumns = 3;
     public int robotYOffset = 30;
     public int robotYIncr = 25;
     public int alliance1Columns = 3;
@@ -321,8 +321,8 @@ public class Main extends Application {
         primaryStage.setTitle("Playoff Predictor");
         primaryStage.setScene(new Scene(root, 900, 650));
         Button bracket = new Button();
-        bracket.setLayoutX(785);
-        bracket.setLayoutY(620);
+        bracket.setLayoutX(10);
+        bracket.setLayoutY(5);
         bracket.setPrefSize(125, 10);
         bracket.setText("Create Bracket");
         root.getChildren().add(bracket);
@@ -1021,7 +1021,7 @@ public class Main extends Application {
         for (int teamNum : teamList) {
             //System.out.println(teamNum);
             Text teamText = new Text(0,0,Integer.toString(teamNum));
-            teamText.setStyle("-fx-font: 18 cambria");
+            teamText.setStyle("-fx-font: 15 cambria");
             if (teamNum == 1153) {
                 teamText.setFill(RED);
             }

@@ -321,9 +321,9 @@ public class Main extends Application {
         primaryStage.setTitle("Playoff Predictor");
         primaryStage.setScene(new Scene(root, 900, 650));
         Button bracket = new Button();
-        bracket.setLayoutX(10);
+        bracket.setLayoutX(5);
         bracket.setLayoutY(5);
-        bracket.setPrefSize(125, 10);
+        bracket.setPrefSize(95, 10);
         bracket.setText("Create Bracket");
         root.getChildren().add(bracket);
         //make new page to show Bracket
@@ -341,115 +341,116 @@ public class Main extends Application {
                         Scene dialogScene = new Scene(bracket, 900, 650);
 
                         Text alliance1Label = new Text("Alliance 1");
-                        alliance1Label.setStyle("-fx-font: 20 cambria");
+                        alliance1Label.setStyle("-fx-font: 18 cambria");
                         alliance1Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance1Label, 0, 0);
 
                         Text alliance1Score = new Text("");
-                        alliance1Score.setStyle("-fx-font: 15 cambria");
+                        alliance1Score.setStyle("-fx-font: 13 cambria");
                         alliance1Score.setFill(Color.RED);
                         bracket.add(alliance1Score, 0, 1);
                         alliance1Score.setText(predictedScore1.getText().toString());
 
+
                         Text A1VA8 = new Text ("Vs.");
-                        A1VA8.setStyle("-fx-font: 15 cambria");
+                        A1VA8.setStyle("-fx-font: 13 cambria");
                         bracket.add(A1VA8, 0, 2);
 
                         Text alliance8Label = new Text("Alliance 8");
-                        alliance8Label.setStyle("-fx-font: 20 cambria");
+                        alliance8Label.setStyle("-fx-font: 18 cambria");
                         alliance8Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance8Label, 0, 3);
 
                         Text alliance8Score = new Text("");
-                        alliance8Score.setStyle("-fx-font: 15 cambria");
+                        alliance8Score.setStyle("-fx-font: 13 cambria");
                         alliance8Score.setFill(Color.RED);
                         bracket.add(alliance8Score, 0, 4);
                         alliance8Score.setText(predictedScore8.getText().toString());
 
                         Text alliance3Label = new Text("Alliance 3");
-                        alliance3Label.setStyle("-fx-font: 20 cambria");
+                        alliance3Label.setStyle("-fx-font: 18 cambria");
                         alliance3Label.setFill(Color.MEDIUMBLUE);
-                        bracket.add(alliance3Label, 0, 6);
+                        bracket.add(alliance3Label, 0, 18);
 
                         Text alliance3Score = new Text("");
-                        alliance3Score.setStyle("-fx-font: 15 cambria");
+                        alliance3Score.setStyle("-fx-font: 13 cambria");
                         alliance3Score.setFill(Color.RED);
-                        bracket.add(alliance3Score, 0, 7);
+                        bracket.add(alliance3Score, 0, 19);
                         alliance3Score.setText(predictedScore3.getText().toString());
 
                         Text A3VA6 = new Text ("Vs.");
-                        A3VA6.setStyle("-fx-font: 15 cambria");
-                        bracket.add(A3VA6, 0, 8);
+                        A3VA6.setStyle("-fx-font: 13 cambria");
+                        bracket.add(A3VA6, 0, 20);
 
                         Text alliance6Label = new Text("Alliance 6");
-                        alliance6Label.setStyle("-fx-font: 20 cambria");
+                        alliance6Label.setStyle("-fx-font: 18 cambria");
                         alliance6Label.setFill(Color.MEDIUMBLUE);
-                        bracket.add(alliance6Label, 0, 9);
+                        bracket.add(alliance6Label, 0, 21);
 
                         Text alliance6Score = new Text("");
-                        alliance6Score.setStyle("-fx-font: 15 cambria");
+                        alliance6Score.setStyle("-fx-font: 13 cambria");
                         alliance6Score.setFill(Color.RED);
-                        bracket.add(alliance6Score, 0, 10);
+                        bracket.add(alliance6Score, 0, 22);
                         alliance6Score.setText(predictedScore6.getText().toString());
 
                         Text alliance2Label = new Text("Alliance 2");
-                        alliance2Label.setStyle("-fx-font: 20 cambria");
+                        alliance2Label.setStyle("-fx-font: 18 cambria");
                         alliance2Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance2Label, 0, 12);
 
                         Text alliance2Score = new Text("");
-                        alliance2Score.setStyle("-fx-font: 15 cambria");
+                        alliance2Score.setStyle("-fx-font: 13 cambria");
                         alliance2Score.setFill(Color.RED);
                         bracket.add(alliance2Score, 0, 13);
                         alliance2Score.setText(predictedScore2.getText().toString());
 
                         Text A2VA7 = new Text ("Vs.");
-                        A2VA7.setStyle("-fx-font: 15 cambria");
+                        A2VA7.setStyle("-fx-font: 13 cambria");
                         bracket.add(A2VA7, 0, 14);
 
                         Text alliance7Label = new Text("Alliance 7");
-                        alliance7Label.setStyle("-fx-font: 20 cambria");
+                        alliance7Label.setStyle("-fx-font: 18 cambria");
                         alliance7Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance7Label, 0, 15);
 
                         Text alliance7Score = new Text("");
-                        alliance7Score.setStyle("-fx-font: 15 cambria");
+                        alliance7Score.setStyle("-fx-font: 13 cambria");
                         alliance7Score.setFill(Color.RED);
                         bracket.add(alliance7Score, 0, 16);
                         alliance7Score.setText(predictedScore7.getText().toString());
 
                         Text alliance4Label = new Text("Alliance 4");
-                        alliance4Label.setStyle("-fx-font: 20 cambria");
+                        alliance4Label.setStyle("-fx-font: 18 cambria");
                         alliance4Label.setFill(Color.MEDIUMBLUE);
-                        bracket.add(alliance4Label, 0, 18);
+                        bracket.add(alliance4Label, 0, 6);
 
                         Text alliance4Score = new Text("");
-                        alliance4Score.setStyle("-fx-font: 15 cambria");
+                        alliance4Score.setStyle("-fx-font: 13 cambria");
                         alliance4Score.setFill(Color.RED);
-                        bracket.add(alliance4Score, 0, 19);
+                        bracket.add(alliance4Score, 0, 7);
                         alliance4Score.setText(predictedScore4.getText().toString());
 
                         Text A4VA5 = new Text ("Vs.");
-                        A4VA5.setStyle("-fx-font: 15 cambria");
-                        bracket.add(A4VA5, 0, 20);
+                        A4VA5.setStyle("-fx-font: 13 cambria");
+                        bracket.add(A4VA5, 0, 8);
 
                         Text alliance5Label = new Text("Alliance 5");
-                        alliance5Label.setStyle("-fx-font: 20 cambria");
+                        alliance5Label.setStyle("-fx-font: 18 cambria");
                         alliance5Label.setFill(Color.MEDIUMBLUE);
-                        bracket.add(alliance5Label, 0, 21);
+                        bracket.add(alliance5Label, 0, 9);
 
                         Text alliance5Score = new Text("");
-                        alliance5Score.setStyle("-fx-font: 15 cambria");
+                        alliance5Score.setStyle("-fx-font: 13 cambria");
                         alliance5Score.setFill(Color.RED);
-                        bracket.add(alliance5Score, 0, 22);
+                        bracket.add(alliance5Score, 0, 10);
                         alliance5Score.setText(predictedScore5.getText().toString());
 
                         Text A1vA8Label = new Text ("");
-                        A1vA8Label.setStyle("-fx-font: 20 cambria");
+                        A1vA8Label.setStyle("-fx-font: 18 cambria");
                         A1vA8Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(A1vA8Label, 3, 2);
                         Text A1vA8Score = new Text ("");
-                        A1vA8Score.setStyle("-fx-font: 15 cambria");
+                        A1vA8Score.setStyle("-fx-font: 13 cambria");
                         A1vA8Score.setFill(Color.RED);
                         bracket.add(A1vA8Score, 3, 3);
                         if (Double.parseDouble(alliance1Score.getText().toString()) >= (Double.parseDouble(alliance8Score.getText().toString()))){
@@ -461,13 +462,13 @@ public class Main extends Application {
                         }
 
                         Text A3vA6Label = new Text ("");
-                        A3vA6Label.setStyle("-fx-font: 20 cambria");
+                        A3vA6Label.setStyle("-fx-font: 18 cambria");
                         A3vA6Label.setFill(Color.MEDIUMBLUE);
-                        bracket.add(A3vA6Label, 3, 8);
+                        bracket.add(A3vA6Label, 3, 20);
                         Text A3vA6Score = new Text ("");
-                        A3vA6Score.setStyle("-fx-font: 15 cambria");
+                        A3vA6Score.setStyle("-fx-font: 13 cambria");
                         A3vA6Score.setFill(Color.RED);
-                        bracket.add(A3vA6Score, 3, 9);
+                        bracket.add(A3vA6Score, 3,21);
                         if (Double.parseDouble(alliance3Score.getText().toString()) >= (Double.parseDouble(alliance6Score.getText().toString()))){
                             A3vA6Label.setText(alliance3Label.getText().toString());
                             A3vA6Score.setText(predictedScore3.getText().toString());
@@ -477,11 +478,11 @@ public class Main extends Application {
                         }
 
                         Text A7vA2Label = new Text ("");
-                        A7vA2Label.setStyle("-fx-font: 20 cambria");
+                        A7vA2Label.setStyle("-fx-font: 18 cambria");
                         bracket.add(A7vA2Label, 3, 14);
                         A7vA2Label.setFill(Color.MEDIUMBLUE);
                         Text A7vA2Score = new Text ("");
-                        A7vA2Score.setStyle("-fx-font: 15 cambria");
+                        A7vA2Score.setStyle("-fx-font: 13 cambria");
                         A7vA2Score.setFill(Color.RED);
                         bracket.add(A7vA2Score, 3, 15);
                         if (Double.parseDouble(alliance7Score.getText().toString()) >= (Double.parseDouble(alliance2Score.getText().toString()))){
@@ -493,13 +494,13 @@ public class Main extends Application {
                         }
 
                         Text A4vA5Label = new Text ("");
-                        A4vA5Label.setStyle("-fx-font: 20 cambria");
-                        bracket.add(A4vA5Label, 3, 20);
+                        A4vA5Label.setStyle("-fx-font: 18 cambria");
+                        bracket.add(A4vA5Label, 3, 8);
                         A4vA5Label.setFill(Color.MEDIUMBLUE);
                         Text A4vA5Score = new Text ("");
-                        A4vA5Score.setStyle("-fx-font: 15 cambria");
+                        A4vA5Score.setStyle("-fx-font: 13 cambria");
                         A4vA5Score.setFill(Color.RED);
-                        bracket.add(A4vA5Score, 3, 21);
+                        bracket.add(A4vA5Score, 3, 9);
                         if (Double.parseDouble(alliance4Score.getText().toString()) >= (Double.parseDouble(alliance5Score.getText().toString()))){
                             A4vA5Label.setText(alliance4Label.getText().toString());
                             A4vA5Score.setText(predictedScore4.getText().toString());
@@ -509,47 +510,51 @@ public class Main extends Application {
                         }
 
                         Text vs21 = new Text ("Vs.");
-                        vs21.setStyle("-fx-font: 15 cambria");
+                        vs21.setStyle("-fx-font: 13 cambria");
                         bracket.add(vs21, 3, 6);
 
                         Text vs22 = new Text ("Vs.");
-                        vs22.setStyle("-fx-font: 15 cambria");
+                        vs22.setStyle("-fx-font: 13 cambria");
                         bracket.add(vs22, 3, 18);
 
                         Text f1Label = new Text ("");
-                        f1Label.setStyle("-fx-font: 20 cambria");
+                        f1Label.setStyle("-fx-font: 18 cambria");
                         f1Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(f1Label, 5, 6);
                         Text f1Score = new Text ("");
-                        f1Score.setStyle("-fx-font: 15 cambria");
+                        f1Score.setStyle("-fx-font: 13 cambria");
                         f1Score.setFill(Color.RED);
                         bracket.add(f1Score, 5,7);
-                        if (Double.parseDouble(A1vA8Score.getText().toString()) >= (Double.parseDouble(A3vA6Score.getText().toString()))){
+                        if (Double.parseDouble(A1vA8Score.getText().toString()) >= (Double.parseDouble(A4vA5Score.getText().toString()))){
                             f1Label.setText(A1vA8Label.getText().toString());
                             f1Score.setText(A1vA8Score.getText().toString());
-                        } else if (Double.parseDouble(A1vA8Score.getText().toString()) <= (Double.parseDouble(A3vA6Score.getText().toString()))){
-                            f1Label.setText(A3vA6Label.getText().toString());
-                            f1Score.setText(A3vA6Score.getText().toString());
-                        }
-
-                        Text f2Label = new Text ("");
-                        f2Label.setStyle("-fx-font: 20 cambria");
-                        f2Label.setFill(Color.MEDIUMBLUE);
-                        bracket.add(f2Label, 5, 18);
-                        Text f2Score = new Text ("");
-                        f2Score.setStyle("-fx-font: 15 cambria");
-                        f2Score.setFill(Color.RED);
-                        bracket.add(f2Score, 5, 19);
-                        if (Double.parseDouble(A7vA2Score.getText().toString()) >= (Double.parseDouble(A4vA5Score.getText().toString()))){
-                            f2Label.setText(A7vA2Label.getText().toString());
-                            f2Score.setText(A7vA2Score.getText().toString());
-                        } else if (Double.parseDouble(A7vA2Score.getText().toString()) <= (Double.parseDouble(A4vA5Score.getText().toString()))){
+                        } else if (Double.parseDouble(A1vA8Score.getText().toString()) <= (Double.parseDouble(A4vA5Score.getText().toString()))){
                             f1Label.setText(A4vA5Label.getText().toString());
                             f1Score.setText(A4vA5Score.getText().toString());
                         }
 
-                         Text wLabel = new Text ("");
-                        wLabel.setStyle("-fx-font: 20 cambria");
+                        Text f2Label = new Text ("");
+                        f2Label.setStyle("-fx-font: 18 cambria");
+                        f2Label.setFill(Color.MEDIUMBLUE);
+                        bracket.add(f2Label, 5, 18);
+                        Text f2Score = new Text ("");
+                        f2Score.setStyle("-fx-font: 13 cambria");
+                        f2Score.setFill(Color.RED);
+                        bracket.add(f2Score, 5, 19);
+                        if (Double.parseDouble(A7vA2Score.getText().toString()) >= (Double.parseDouble(A3vA6Score.getText().toString()))){
+                            f2Label.setText(A7vA2Label.getText().toString());
+                            f2Score.setText(A7vA2Score.getText().toString());
+                        } else if (Double.parseDouble(A7vA2Score.getText().toString()) <= (Double.parseDouble(A3vA6Score.getText().toString()))){
+                            f1Label.setText(A3vA6Label.getText().toString());
+                            f1Score.setText(A3vA6Score.getText().toString());
+                        }
+
+                        Text vF = new Text("Vs.");
+                        vF.setStyle("-fx-font: 13 cambria");
+                        bracket.add(vF, 5, 12);
+
+                        Text wLabel = new Text ("");
+                        wLabel.setStyle("-fx-font: 18 cambria");
                         bracket.add(wLabel, 7, 12);
                         wLabel.setFill(Color.MEDIUMBLUE);
                         if (Double.parseDouble(f1Score.getText().toString()) >= (Double.parseDouble(f2Score.getText().toString()))){
@@ -561,6 +566,57 @@ public class Main extends Application {
                         dialog.setScene(dialogScene);
                         dialog.show();
 
+                    }});
+        Button scores = new Button();
+        scores.setLayoutX(105);
+        scores.setLayoutY(5);
+        scores.setPrefSize(85, 10);
+        scores.setText("Show Scores");
+        root.getChildren().add(scores);
+        //make new page to show Bracket
+        scores.setOnAction(
+                new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        final Stage dialog = new Stage();
+                        dialog.initModality(Modality.APPLICATION_MODAL);
+                        dialog.initOwner(primaryStage);
+                        GridPane scores = new GridPane();
+                        scores.setHgap(10);
+                        scores.setVgap(10);
+                        scores.setPadding(new Insets(0, 10, 0, 10));
+                        Scene dialogScene = new Scene(scores, 900, 650);
+
+                        Text alliance1Label = new Text("Alliance 1");
+                        alliance1Label.setStyle("-fx-font: 18 cambria");
+                        alliance1Label.setFill(Color.MEDIUMBLUE);
+                        scores.add(alliance1Label, 0, 0);
+                    }});
+
+        Button data = new Button();
+        data.setLayoutX(195);
+        data.setLayoutY(5);
+        data.setPrefSize(85, 10);
+        data.setText("Sort Data");
+        root.getChildren().add(data);
+        //make new page to sort data
+        data.setOnAction(
+                new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        final Stage dialog = new Stage();
+                        dialog.initModality(Modality.APPLICATION_MODAL);
+                        dialog.initOwner(primaryStage);
+                        GridPane data = new GridPane();
+                        data.setHgap(10);
+                        data.setVgap(10);
+                        data.setPadding(new Insets(0, 10, 0, 10));
+                        Scene dialogScene = new Scene(scores, 900, 650);
+
+                        Text alliance1Label = new Text("Alliance 1");
+                        alliance1Label.setStyle("-fx-font: 18 cambria");
+                        alliance1Label.setFill(Color.MEDIUMBLUE);
+                        data.add(alliance1Label, 0, 0);
                     }});
 
 

@@ -53,16 +53,25 @@ public class Main extends Application {
     //public static String dataSheetDir = userDir + "\\Documents\\Datasheets";
     public Writer writer = null;
     public ArrayList<RobotData> robotList = new ArrayList<RobotData>();
-    public List<Alliance1Data> adList1 = new ArrayList<Alliance1Data>();
-    public List<Alliance2Data> adList2 = new ArrayList<Alliance2Data>();
-    public List<Alliance3Data> adList3 = new ArrayList<Alliance3Data>();
-    public List<Alliance4Data> adList4 = new ArrayList<Alliance4Data>();
-    public List<Alliance5Data> adList5 = new ArrayList<Alliance5Data>();
-    public List<Alliance6Data> adList6 = new ArrayList<Alliance6Data>();
-    public List<Alliance7Data> adList7 = new ArrayList<Alliance7Data>();
-    public List<Alliance8Data> adList8 = new ArrayList<Alliance8Data>();
+    public List<AllianceData> adList1 = new ArrayList<AllianceData>();
+    public List<AllianceData> adList2 = new ArrayList<AllianceData>();
+    public List<AllianceData> adList3 = new ArrayList<AllianceData>();
+    public List<AllianceData> adList4 = new ArrayList<AllianceData>();
+    public List<AllianceData> adList5 = new ArrayList<AllianceData>();
+    public List<AllianceData> adList6 = new ArrayList<AllianceData>();
+    public List<AllianceData> adList7 = new ArrayList<AllianceData>();
+    public List<AllianceData> adList8 = new ArrayList<AllianceData>();
     public List<AllianceTextData> actualList = new ArrayList<AllianceTextData>();
     public List<Integer> teamList = new ArrayList<Integer>();
+
+    public AllianceData alliance1 = new AllianceData();
+    public AllianceData alliance2 = new AllianceData();
+    public AllianceData alliance3 = new AllianceData();
+    public AllianceData alliance4 = new AllianceData();
+    public AllianceData alliance5 = new AllianceData();
+    public AllianceData alliance6 = new AllianceData();
+    public AllianceData alliance7 = new AllianceData();
+    public AllianceData alliance8 = new AllianceData();
 
     public List<Text> alliance1TextList = new ArrayList<Text>();
     public List<Text> alliance2TextList = new ArrayList<Text>();
@@ -73,6 +82,7 @@ public class Main extends Application {
     public List<Text> alliance7TextList = new ArrayList<Text>();
     public List<Text> alliance8TextList = new ArrayList<Text>();
     public List<Text> robotTextList = new ArrayList<Text>();
+
 
 
     public Text predictedScore1;
@@ -133,116 +143,116 @@ public class Main extends Application {
     public Text avgClimbsText8;
 
     public int avgAutoFuel1X = 462;
-    public int avgAutoFuel1Y = 83;
+    public int avgAutoFuel1Y = 73;
     public int avgTeleFuel1X = 556;
-    public int avgTeleFuel1Y = 83;
+    public int avgTeleFuel1Y = 73;
     public int avgAutoGears1X = 650;
-    public int avgAutoGears1Y = 83;
+    public int avgAutoGears1Y = 73;
     public int avgTeleGears1X = 753;
-    public int avgTeleGears1Y = 83;
+    public int avgTeleGears1Y = 73;
     public int avgClimbs1X = 838;
-    public int avgClimbs1Y = 83;
+    public int avgClimbs1Y = 73;
 
     public int avgAutoFuel2X = 462;
-    public int avgAutoFuel2Y = 160;
+    public int avgAutoFuel2Y = 140;
     public int avgTeleFuel2X = 556;
-    public int avgTeleFuel2Y = 160;
+    public int avgTeleFuel2Y = 140;
     public int avgAutoGears2X = 650;
-    public int avgAutoGears2Y = 160;
+    public int avgAutoGears2Y = 140;
     public int avgTeleGears2X = 753;
-    public int avgTeleGears2Y = 160;
+    public int avgTeleGears2Y = 140;
     public int avgClimbs2X = 838;
-    public int avgClimbs2Y = 160;
+    public int avgClimbs2Y = 140;
 
     public int avgAutoFuel3X = 462;
-    public int avgAutoFuel3Y = 231;
+    public int avgAutoFuel3Y = 201;
     public int avgTeleFuel3X = 556;
-    public int avgTeleFuel3Y = 231;
+    public int avgTeleFuel3Y = 201;
     public int avgAutoGears3X = 650;
-    public int avgAutoGears3Y = 231;
+    public int avgAutoGears3Y = 201;
     public int avgTeleGears3X = 753;
-    public int avgTeleGears3Y = 231;
+    public int avgTeleGears3Y = 201;
     public int avgClimbs3X = 838;
-    public int avgClimbs3Y = 231;
+    public int avgClimbs3Y = 201;
 
     public int avgAutoFuel4X = 462;
-    public int avgAutoFuel4Y = 309;
+    public int avgAutoFuel4Y = 269;
     public int avgTeleFuel4X = 556;
-    public int avgTeleFuel4Y = 309;
+    public int avgTeleFuel4Y = 269;
     public int avgAutoGears4X = 650;
-    public int avgAutoGears4Y = 309;
+    public int avgAutoGears4Y = 269;
     public int avgTeleGears4X = 753;
-    public int avgTeleGears4Y = 309;
+    public int avgTeleGears4Y = 269;
     public int avgClimbs4X = 838;
-    public int avgClimbs4Y = 309;
+    public int avgClimbs4Y = 269;
 
     public int avgAutoFuel5X = 462;
-    public int avgAutoFuel5Y = 383;
+    public int avgAutoFuel5Y = 333;
     public int avgTeleFuel5X = 556;
-    public int avgTeleFuel5Y = 383;
+    public int avgTeleFuel5Y = 333;
     public int avgAutoGears5X = 650;
-    public int avgAutoGears5Y = 383;
+    public int avgAutoGears5Y = 333;
     public int avgTeleGears5X = 753;
-    public int avgTeleGears5Y = 383;
+    public int avgTeleGears5Y = 333;
     public int avgClimbs5X = 838;
-    public int avgClimbs5Y = 383;
+    public int avgClimbs5Y = 333;
 
     public int avgAutoFuel6X = 462;
-    public int avgAutoFuel6Y = 458;
+    public int avgAutoFuel6Y = 398;
     public int avgTeleFuel6X = 556;
-    public int avgTeleFuel6Y = 458;
+    public int avgTeleFuel6Y = 398;
     public int avgAutoGears6X = 650;
-    public int avgAutoGears6Y = 458;
+    public int avgAutoGears6Y = 398;
     public int avgTeleGears6X = 753;
-    public int avgTeleGears6Y = 458;
+    public int avgTeleGears6Y = 398;
     public int avgClimbs6X = 838;
-    public int avgClimbs6Y = 458;
+    public int avgClimbs6Y = 398;
 
     public int avgAutoFuel7X = 462;
-    public int avgAutoFuel7Y = 535;
+    public int avgAutoFuel7Y = 465;
     public int avgTeleFuel7X = 556;
-    public int avgTeleFuel7Y = 535;
+    public int avgTeleFuel7Y = 465;
     public int avgAutoGears7X = 650;
-    public int avgAutoGears7Y = 535;
+    public int avgAutoGears7Y = 465;
     public int avgTeleGears7X = 753;
-    public int avgTeleGears7Y = 535;
+    public int avgTeleGears7Y = 465;
     public int avgClimbs7X = 838;
-    public int avgClimbs7Y = 535;
+    public int avgClimbs7Y = 465;
 
     public int avgAutoFuel8X = 462;
-    public int avgAutoFuel8Y = 608;
+    public int avgAutoFuel8Y = 528;
     public int avgTeleFuel8X = 556;
-    public int avgTeleFuel8Y = 608;
+    public int avgTeleFuel8Y = 528;
     public int avgAutoGears8X = 650;
-    public int avgAutoGears8Y = 608;
+    public int avgAutoGears8Y = 528;
     public int avgTeleGears8X = 753;
-    public int avgTeleGears8Y = 608;
+    public int avgTeleGears8Y = 528;
     public int avgClimbs8X = 838;
-    public int avgClimbs8Y = 608;
+    public int avgClimbs8Y = 528;
 
     public int predictedScore1X = 353;
-    public int predictedScore1Y = 83;
+    public int predictedScore1Y = 73;
 
     public int predictedScore2X = 353;
-    public int predictedScore2Y = 160;
+    public int predictedScore2Y = 140;
 
     public int predictedScore3X = 353;
-    public int predictedScore3Y = 231;
+    public int predictedScore3Y = 201;
 
     public int predictedScore4X = 353;
-    public int predictedScore4Y = 309;
+    public int predictedScore4Y = 269;
 
     public int predictedScore5X = 353;
-    public int predictedScore5Y = 383;
+    public int predictedScore5Y = 333;
 
     public int predictedScore6X = 353;
-    public int predictedScore6Y = 458;
+    public int predictedScore6Y = 398;
 
     public int predictedScore7X = 353;
-    public int predictedScore7Y = 535;
+    public int predictedScore7Y = 465;
 
     public int predictedScore8X = 353;
-    public int predictedScore8Y = 608;
+    public int predictedScore8Y = 528;
 
     public int predictedScoreLabelX = 315;
     public int predictedScoreLabelY = 25;
@@ -260,31 +270,31 @@ public class Main extends Application {
 
     public int alliance1TextY = 50;
     public int alliance1TextX = 150;
-    public int alliance2TextY = 125;
+    public int alliance2TextY = 115;
     public int alliance2TextX = 150;
-    public int alliance3TextY = 200;
+    public int alliance3TextY = 180;
     public int alliance3TextX = 150;
-    public int alliance4TextY = 275;
+    public int alliance4TextY = 245;
     public int alliance4TextX = 150;
-    public int alliance5TextY = 350;
+    public int alliance5TextY = 310;
     public int alliance5TextX = 150;
-    public int alliance6TextY = 425;
+    public int alliance6TextY = 375;
     public int alliance6TextX = 150;
-    public int alliance7TextY = 500;
+    public int alliance7TextY = 440;
     public int alliance7TextX = 150;
-    public int alliance8TextY = 575;
+    public int alliance8TextY = 505;
     public int alliance8TextX = 150;
     public int robotTextY = 50;
     public int robotTextX = 5;
 
     public int startX = 5;
     public int startY = 38;
-    public int incrX = 45;
+    public int incrX = 30;
     public int incrY = 25;
     public int currX = startX;
     public int currY = startY;
-    public int columns = 3;
-    public int robotColumns = 3;
+    public int columns = 4;
+    public int robotColumns = 4;
     public int robotYOffset = 30;
     public int robotYIncr = 25;
     public int alliance1Columns = 3;
@@ -341,7 +351,7 @@ public class Main extends Application {
                         Scene dialogScene = new Scene(bracket, 900, 650);
 
                         Text alliance1Label = new Text("Alliance 1");
-                        alliance1Label.setStyle("-fx-font: 18 cambria");
+                        alliance1Label.setStyle("-fx-font: 15 cambria");
                         alliance1Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance1Label, 0, 0);
 
@@ -357,7 +367,7 @@ public class Main extends Application {
                         bracket.add(A1VA8, 0, 2);
 
                         Text alliance8Label = new Text("Alliance 8");
-                        alliance8Label.setStyle("-fx-font: 18 cambria");
+                        alliance8Label.setStyle("-fx-font: 15 cambria");
                         alliance8Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance8Label, 0, 3);
 
@@ -368,7 +378,7 @@ public class Main extends Application {
                         alliance8Score.setText(predictedScore8.getText().toString());
 
                         Text alliance3Label = new Text("Alliance 3");
-                        alliance3Label.setStyle("-fx-font: 18 cambria");
+                        alliance3Label.setStyle("-fx-font: 15 cambria");
                         alliance3Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance3Label, 0, 18);
 
@@ -383,7 +393,7 @@ public class Main extends Application {
                         bracket.add(A3VA6, 0, 20);
 
                         Text alliance6Label = new Text("Alliance 6");
-                        alliance6Label.setStyle("-fx-font: 18 cambria");
+                        alliance6Label.setStyle("-fx-font: 15 cambria");
                         alliance6Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance6Label, 0, 21);
 
@@ -394,7 +404,7 @@ public class Main extends Application {
                         alliance6Score.setText(predictedScore6.getText().toString());
 
                         Text alliance2Label = new Text("Alliance 2");
-                        alliance2Label.setStyle("-fx-font: 18 cambria");
+                        alliance2Label.setStyle("-fx-font: 15 cambria");
                         alliance2Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance2Label, 0, 12);
 
@@ -409,7 +419,7 @@ public class Main extends Application {
                         bracket.add(A2VA7, 0, 14);
 
                         Text alliance7Label = new Text("Alliance 7");
-                        alliance7Label.setStyle("-fx-font: 18 cambria");
+                        alliance7Label.setStyle("-fx-font: 15 cambria");
                         alliance7Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance7Label, 0, 15);
 
@@ -420,7 +430,7 @@ public class Main extends Application {
                         alliance7Score.setText(predictedScore7.getText().toString());
 
                         Text alliance4Label = new Text("Alliance 4");
-                        alliance4Label.setStyle("-fx-font: 18 cambria");
+                        alliance4Label.setStyle("-fx-font: 15 cambria");
                         alliance4Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance4Label, 0, 6);
 
@@ -435,7 +445,7 @@ public class Main extends Application {
                         bracket.add(A4VA5, 0, 8);
 
                         Text alliance5Label = new Text("Alliance 5");
-                        alliance5Label.setStyle("-fx-font: 18 cambria");
+                        alliance5Label.setStyle("-fx-font: 15 cambria");
                         alliance5Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(alliance5Label, 0, 9);
 
@@ -446,7 +456,7 @@ public class Main extends Application {
                         alliance5Score.setText(predictedScore5.getText().toString());
 
                         Text A1vA8Label = new Text ("");
-                        A1vA8Label.setStyle("-fx-font: 18 cambria");
+                        A1vA8Label.setStyle("-fx-font: 15 cambria");
                         A1vA8Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(A1vA8Label, 3, 2);
                         Text A1vA8Score = new Text ("");
@@ -462,7 +472,7 @@ public class Main extends Application {
                         }
 
                         Text A3vA6Label = new Text ("");
-                        A3vA6Label.setStyle("-fx-font: 18 cambria");
+                        A3vA6Label.setStyle("-fx-font: 15 cambria");
                         A3vA6Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(A3vA6Label, 3, 20);
                         Text A3vA6Score = new Text ("");
@@ -478,7 +488,7 @@ public class Main extends Application {
                         }
 
                         Text A7vA2Label = new Text ("");
-                        A7vA2Label.setStyle("-fx-font: 18 cambria");
+                        A7vA2Label.setStyle("-fx-font: 15 cambria");
                         bracket.add(A7vA2Label, 3, 14);
                         A7vA2Label.setFill(Color.MEDIUMBLUE);
                         Text A7vA2Score = new Text ("");
@@ -494,7 +504,7 @@ public class Main extends Application {
                         }
 
                         Text A4vA5Label = new Text ("");
-                        A4vA5Label.setStyle("-fx-font: 18 cambria");
+                        A4vA5Label.setStyle("-fx-font: 15 cambria");
                         bracket.add(A4vA5Label, 3, 8);
                         A4vA5Label.setFill(Color.MEDIUMBLUE);
                         Text A4vA5Score = new Text ("");
@@ -518,7 +528,7 @@ public class Main extends Application {
                         bracket.add(vs22, 3, 18);
 
                         Text f1Label = new Text ("");
-                        f1Label.setStyle("-fx-font: 18 cambria");
+                        f1Label.setStyle("-fx-font: 15 cambria");
                         f1Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(f1Label, 5, 6);
                         Text f1Score = new Text ("");
@@ -534,7 +544,7 @@ public class Main extends Application {
                         }
 
                         Text f2Label = new Text ("");
-                        f2Label.setStyle("-fx-font: 18 cambria");
+                        f2Label.setStyle("-fx-font: 15 cambria");
                         f2Label.setFill(Color.MEDIUMBLUE);
                         bracket.add(f2Label, 5, 18);
                         Text f2Score = new Text ("");
@@ -545,8 +555,8 @@ public class Main extends Application {
                             f2Label.setText(A7vA2Label.getText().toString());
                             f2Score.setText(A7vA2Score.getText().toString());
                         } else if (Double.parseDouble(A7vA2Score.getText().toString()) <= (Double.parseDouble(A3vA6Score.getText().toString()))){
-                            f1Label.setText(A3vA6Label.getText().toString());
-                            f1Score.setText(A3vA6Score.getText().toString());
+                            f2Label.setText(A3vA6Label.getText().toString());
+                            f2Score.setText(A3vA6Score.getText().toString());
                         }
 
                         Text vF = new Text("Vs.");
@@ -573,7 +583,7 @@ public class Main extends Application {
         scores.setPrefSize(85, 10);
         scores.setText("Show Scores");
         root.getChildren().add(scores);
-        //make new page to show Bracket
+        //make new page to show scores, high/low/raw
         scores.setOnAction(
                 new EventHandler<ActionEvent>() {
                     @Override
@@ -587,10 +597,183 @@ public class Main extends Application {
                         scores.setPadding(new Insets(0, 10, 0, 10));
                         Scene dialogScene = new Scene(scores, 900, 650);
 
+                        Text scoreHighLabel = new Text("Rounded Score");
+                        scoreHighLabel.setStyle("-fx-font: 24 cambria");
+                        scoreHighLabel.setFill(Color.MEDIUMBLUE);
+                        scores.add(scoreHighLabel, 2, 0);
+
+                        Text scoreRawLabel = new Text("Raw Score");
+                        scoreRawLabel.setStyle("-fx-font: 24 cambria");
+                        scoreRawLabel.setFill(Color.MEDIUMBLUE);
+                        scores.add(scoreRawLabel, 3, 0);
+
+                        Text scoreLowLabel = new Text("Low Score");
+                        scoreLowLabel.setStyle("-fx-font: 24 cambria");
+                        scoreLowLabel.setFill(Color.MEDIUMBLUE);
+                        scores.add(scoreLowLabel, 4, 0);
+
                         Text alliance1Label = new Text("Alliance 1");
-                        alliance1Label.setStyle("-fx-font: 18 cambria");
+                        alliance1Label.setStyle("-fx-font: 24 cambria");
                         alliance1Label.setFill(Color.MEDIUMBLUE);
-                        scores.add(alliance1Label, 0, 0);
+                        scores.add(alliance1Label, 0, 1);
+
+                        Text alliance2Label = new Text("Alliance 2");
+                        alliance2Label.setStyle("-fx-font: 24 cambria");
+                        alliance2Label.setFill(Color.MEDIUMBLUE);
+                        scores.add(alliance2Label, 0, 2);
+
+                        Text alliance3Label = new Text("Alliance 3");
+                        alliance3Label.setStyle("-fx-font: 24 cambria");
+                        alliance3Label.setFill(Color.MEDIUMBLUE);
+                        scores.add(alliance3Label, 0, 3);
+
+                        Text alliance4Label = new Text("Alliance 4");
+                        alliance4Label.setStyle("-fx-font: 24 cambria");
+                        alliance4Label.setFill(Color.MEDIUMBLUE);
+                        scores.add(alliance4Label, 0, 4);
+
+                        Text alliance5Label = new Text("Alliance 5");
+                        alliance5Label.setStyle("-fx-font: 24 cambria");
+                        alliance5Label.setFill(Color.MEDIUMBLUE);
+                        scores.add(alliance5Label, 0, 5);
+
+                        Text alliance6Label = new Text("Alliance 6");
+                        alliance6Label.setStyle("-fx-font: 24 cambria");
+                        alliance6Label.setFill(Color.MEDIUMBLUE);
+                        scores.add(alliance6Label, 0, 6);
+
+                        Text alliance7Label = new Text("Alliance 7");
+                        alliance7Label.setStyle("-fx-font: 24 cambria");
+                        alliance7Label.setFill(Color.MEDIUMBLUE);
+                        scores.add(alliance7Label, 0, 7);
+
+                        Text alliance8Label = new Text("Alliance 8");
+                        alliance8Label.setStyle("-fx-font: 24 cambria");
+                        alliance8Label.setFill(Color.MEDIUMBLUE);
+                        scores.add(alliance8Label, 0, 8);
+
+                        Text alliance1Raw = new Text(String.format("%3.1f", alliance1.allianceRawStrength));
+                        alliance1Raw.setStyle("-fx-font: 22 cambria");
+                        alliance1Raw.setFill(Color.RED);
+                        scores.add(alliance1Raw, 3, 1);
+
+                        Text alliance1High = new Text(String.format("%3.1f", alliance1.allianceHighStrength));
+                        alliance1High.setStyle("-fx-font: 22 cambria");
+                        alliance1High.setFill(Color.RED);
+                        scores.add(alliance1High, 2, 1);
+
+                        Text alliance1Low = new Text(String.format("%3.1f", alliance1.allianceLowStrength));
+                        alliance1Low.setStyle("-fx-font: 22 cambria");
+                        alliance1Low.setFill(Color.RED);
+                        scores.add(alliance1Low, 4, 1);
+
+                        Text alliance2Raw = new Text(String.format("%3.1f", alliance2.allianceRawStrength));
+                        alliance2Raw.setStyle("-fx-font: 22 cambria");
+                        alliance2Raw.setFill(Color.RED);
+                        scores.add(alliance2Raw, 3, 2);
+
+                        Text alliance2High = new Text(String.format("%3.1f", alliance2.allianceHighStrength));
+                        alliance2High.setStyle("-fx-font: 22 cambria");
+                        alliance2High.setFill(Color.RED);
+                        scores.add(alliance2High, 2, 2);
+
+                        Text alliance2Low = new Text(String.format("%3.1f", alliance2.allianceLowStrength));
+                        alliance2Low.setStyle("-fx-font: 22 cambria");
+                        alliance2Low.setFill(Color.RED);
+                        scores.add(alliance2Low, 4, 2);
+
+                        Text alliance3Raw = new Text(String.format("%3.1f", alliance3.allianceRawStrength));
+                        alliance3Raw.setStyle("-fx-font: 22 cambria");
+                        alliance3Raw.setFill(Color.RED);
+                        scores.add(alliance3Raw, 3, 3);
+
+                        Text alliance3High = new Text(String.format("%3.1f", alliance3.allianceHighStrength));
+                        alliance3High.setStyle("-fx-font: 22 cambria");
+                        alliance3High.setFill(Color.RED);
+                        scores.add(alliance3High, 2, 3);
+
+                        Text alliance3Low = new Text(String.format("%3.1f", alliance3.allianceLowStrength));
+                        alliance3Low.setStyle("-fx-font: 22 cambria");
+                        alliance3Low.setFill(Color.RED);
+                        scores.add(alliance3Low, 4, 3);
+
+                        Text alliance4Raw = new Text(String.format("%3.1f", alliance4.allianceRawStrength));
+                        alliance4Raw.setStyle("-fx-font: 22 cambria");
+                        alliance4Raw.setFill(Color.RED);
+                        scores.add(alliance4Raw, 3, 4);
+
+                        Text alliance4High = new Text(String.format("%3.1f", alliance4.allianceHighStrength));
+                        alliance4High.setStyle("-fx-font: 22 cambria");
+                        alliance4High.setFill(Color.RED);
+                        scores.add(alliance4High, 2, 4);
+
+                        Text alliance4Low = new Text(String.format("%3.1f", alliance4.allianceLowStrength));
+                        alliance4Low.setStyle("-fx-font: 22 cambria");
+                        alliance4Low.setFill(Color.RED);
+                        scores.add(alliance4Low, 4, 4);
+
+                        Text alliance5Raw = new Text(String.format("%3.1f", alliance5.allianceRawStrength));
+                        alliance5Raw.setStyle("-fx-font: 22 cambria");
+                        alliance5Raw.setFill(Color.RED);
+                        scores.add(alliance5Raw, 3, 5);
+
+                        Text alliance5High = new Text(String.format("%3.1f", alliance5.allianceHighStrength));
+                        alliance5High.setStyle("-fx-font: 22 cambria");
+                        alliance5High.setFill(Color.RED);
+                        scores.add(alliance5High, 2, 5);
+
+                        Text alliance5Low = new Text(String.format("%3.1f", alliance5.allianceLowStrength));
+                        alliance5Low.setStyle("-fx-font: 22 cambria");
+                        alliance5Low.setFill(Color.RED);
+                        scores.add(alliance5Low, 4, 5);
+
+                        Text alliance6Raw = new Text(String.format("%3.1f", alliance6.allianceRawStrength));
+                        alliance6Raw.setStyle("-fx-font: 22 cambria");
+                        alliance6Raw.setFill(Color.RED);
+                        scores.add(alliance6Raw, 3, 6);
+
+                        Text alliance6High = new Text(String.format("%3.1f", alliance6.allianceHighStrength));
+                        alliance6High.setStyle("-fx-font: 22 cambria");
+                        alliance6High.setFill(Color.RED);
+                        scores.add(alliance6High, 2, 6);
+
+                        Text alliance6Low = new Text(String.format("%3.1f", alliance6.allianceLowStrength));
+                        alliance6Low.setStyle("-fx-font: 22 cambria");
+                        alliance6Low.setFill(Color.RED);
+                        scores.add(alliance6Low, 4, 6);
+
+                        Text alliance7Raw = new Text(String.format("%3.1f", alliance7.allianceRawStrength));
+                        alliance7Raw.setStyle("-fx-font: 22 cambria");
+                        alliance7Raw.setFill(Color.RED);
+                        scores.add(alliance7Raw, 3, 7);
+
+                        Text alliance7High = new Text(String.format("%3.1f", alliance7.allianceHighStrength));
+                        alliance7High.setStyle("-fx-font: 22 cambria");
+                        alliance7High.setFill(Color.RED);
+                        scores.add(alliance7High, 2, 7);
+
+                        Text alliance7Low = new Text(String.format("%3.1f", alliance7.allianceLowStrength));
+                        alliance7Low.setStyle("-fx-font: 22 cambria");
+                        alliance7Low.setFill(Color.RED);
+                        scores.add(alliance7Low, 4, 7);
+
+                        Text alliance8Raw = new Text(String.format("%3.1f", alliance8.allianceRawStrength));
+                        alliance8Raw.setStyle("-fx-font: 22 cambria");
+                        alliance8Raw.setFill(Color.RED);
+                        scores.add(alliance8Raw, 3, 8);
+
+                        Text alliance8High = new Text(String.format("%3.1f", alliance8.allianceHighStrength));
+                        alliance8High.setStyle("-fx-font: 22 cambria");
+                        alliance8High.setFill(Color.RED);
+                        scores.add(alliance8High, 2, 8);
+
+                        Text alliance8Low = new Text(String.format("%3.1f", alliance8.allianceLowStrength));
+                        alliance8Low.setStyle("-fx-font: 22 cambria");
+                        alliance8Low.setFill(Color.RED);
+                        scores.add(alliance8Low, 4, 8);
+
+                        dialog.setScene(dialogScene);
+                        dialog.show();
                     }});
 
         Button data = new Button();
@@ -611,12 +794,633 @@ public class Main extends Application {
                         data.setHgap(10);
                         data.setVgap(10);
                         data.setPadding(new Insets(0, 10, 0, 10));
-                        Scene dialogScene = new Scene(scores, 900, 650);
+                        Scene dialogScene = new Scene(data, 900, 650);
 
                         Text alliance1Label = new Text("Alliance 1");
-                        alliance1Label.setStyle("-fx-font: 18 cambria");
+                        alliance1Label.setStyle("-fx-font: 24 cambria");
                         alliance1Label.setFill(Color.MEDIUMBLUE);
-                        data.add(alliance1Label, 0, 0);
+                        data.add(alliance1Label, 0, 1);
+
+                        Text alliance2Label = new Text("Alliance 2");
+                        alliance2Label.setStyle("-fx-font: 24 cambria");
+                        alliance2Label.setFill(Color.MEDIUMBLUE);
+                        data.add(alliance2Label, 0, 2);
+
+                        Text alliance3Label = new Text("Alliance 3");
+                        alliance3Label.setStyle("-fx-font: 24 cambria");
+                        alliance3Label.setFill(Color.MEDIUMBLUE);
+                        data.add(alliance3Label, 0, 3);
+
+                        Text alliance4Label = new Text("Alliance 4");
+                        alliance4Label.setStyle("-fx-font: 24 cambria");
+                        alliance4Label.setFill(Color.MEDIUMBLUE);
+                        data.add(alliance4Label, 0, 4);
+
+                        Text alliance5Label = new Text("Alliance 5");
+                        alliance5Label.setStyle("-fx-font: 24 cambria");
+                        alliance5Label.setFill(Color.MEDIUMBLUE);
+                        data.add(alliance5Label, 0, 5);
+
+                        Text alliance6Label = new Text("Alliance 6");
+                        alliance6Label.setStyle("-fx-font: 24 cambria");
+                        alliance6Label.setFill(Color.MEDIUMBLUE);
+                        data.add(alliance6Label, 0, 6);
+
+                        Text alliance7Label = new Text("Alliance 7");
+                        alliance7Label.setStyle("-fx-font: 24 cambria");
+                        alliance7Label.setFill(Color.MEDIUMBLUE);
+                        data.add(alliance7Label, 0, 7);
+
+                        Text alliance8Label = new Text("Alliance 8");
+                        alliance8Label.setStyle("-fx-font: 24 cambria");
+                        alliance8Label.setFill(Color.MEDIUMBLUE);
+                        data.add(alliance8Label, 0, 8);
+
+                        Text autoGears1 = new Text(avgAutoGearsText1.getText().toString());
+                        autoGears1.setStyle("-fx-font: 24 cambria");
+                        autoGears1.setFill(Color.MEDIUMBLUE);
+                        data.add(autoGears1, 1, 1);
+
+                        Text autoGears2 = new Text(avgAutoGearsText2.getText().toString());
+                        autoGears2.setStyle("-fx-font: 24 cambria");
+                        autoGears2.setFill(Color.MEDIUMBLUE);
+                        data.add(autoGears2, 1, 2);
+
+                        Text autoGears3 = new Text(avgAutoGearsText3.getText().toString());
+                        autoGears3.setStyle("-fx-font: 24 cambria");
+                        autoGears3.setFill(Color.MEDIUMBLUE);
+                        data.add(autoGears3, 1, 3);
+
+                        Text autoGears4 = new Text(avgAutoGearsText4.getText().toString());
+                        autoGears4.setStyle("-fx-font: 24 cambria");
+                        autoGears4.setFill(Color.MEDIUMBLUE);
+                        data.add(autoGears4, 1, 4);
+
+                        Text autoGears5 = new Text(avgAutoGearsText5.getText().toString());
+                        autoGears5.setStyle("-fx-font: 24 cambria");
+                        autoGears5.setFill(Color.MEDIUMBLUE);
+                        data.add(autoGears5, 1, 5);
+
+                        Text autoGears6 = new Text(avgAutoGearsText6.getText().toString());
+                        autoGears6.setStyle("-fx-font: 24 cambria");
+                        autoGears6.setFill(Color.MEDIUMBLUE);
+                        data.add(autoGears6, 1, 6);
+
+                        Text autoGears7 = new Text(avgAutoGearsText7.getText().toString());
+                        autoGears7.setStyle("-fx-font: 24 cambria");
+                        autoGears7.setFill(Color.MEDIUMBLUE);
+                        data.add(autoGears7, 1, 7);
+
+                        Text autoGears8 = new Text(avgAutoGearsText8.getText().toString());
+                        autoGears8.setStyle("-fx-font: 24 cambria");
+                        autoGears8.setFill(Color.MEDIUMBLUE);
+                        data.add(autoGears8, 1, 8);
+
+                        Text teleGears1 = new Text(avgTeleGearsText1.getText().toString());
+                        teleGears1.setStyle("-fx-font: 24 cambria");
+                        teleGears1.setFill(Color.MEDIUMBLUE);
+                        data.add(teleGears1, 2, 1);
+
+                        Text teleGears2 = new Text(avgTeleGearsText2.getText().toString());
+                        teleGears2.setStyle("-fx-font: 24 cambria");
+                        teleGears2.setFill(Color.MEDIUMBLUE);
+                        data.add(teleGears2, 2, 2);
+
+                        Text teleGears3 = new Text(avgTeleGearsText3.getText().toString());
+                        teleGears3.setStyle("-fx-font: 24 cambria");
+                        teleGears3.setFill(Color.MEDIUMBLUE);
+                        data.add(teleGears3, 2, 3);
+
+                        Text teleGears4 = new Text(avgTeleGearsText4.getText().toString());
+                        teleGears4.setStyle("-fx-font: 24 cambria");
+                        teleGears4.setFill(Color.MEDIUMBLUE);
+                        data.add(teleGears4, 2, 4);
+
+                        Text teleGears5 = new Text(avgTeleGearsText5.getText().toString());
+                        teleGears5.setStyle("-fx-font: 24 cambria");
+                        teleGears5.setFill(Color.MEDIUMBLUE);
+                        data.add(teleGears5, 2, 5);
+
+                        Text teleGears6 = new Text(avgTeleGearsText6.getText().toString());
+                        teleGears6.setStyle("-fx-font: 24 cambria");
+                        teleGears6.setFill(Color.MEDIUMBLUE);
+                        data.add(teleGears6, 2, 6);
+
+                        Text teleGears7 = new Text(avgTeleGearsText7.getText().toString());
+                        teleGears7.setStyle("-fx-font: 24 cambria");
+                        teleGears7.setFill(Color.MEDIUMBLUE);
+                        data.add(teleGears7, 2, 7);
+
+                        Text teleGears8 = new Text(avgTeleGearsText8.getText().toString());
+                        teleGears8.setStyle("-fx-font: 24 cambria");
+                        teleGears8.setFill(Color.MEDIUMBLUE);
+                        data.add(teleGears8, 2, 8);
+
+                        Text autoFuel1 = new Text(avgAutoGearsText1.getText().toString());
+                        autoFuel1.setStyle("-fx-font: 24 cambria");
+                        autoFuel1.setFill(Color.MEDIUMBLUE);
+                        data.add(autoFuel1, 3, 1);
+
+                        Text autoFuel2 = new Text(avgAutoGearsText2.getText().toString());
+                        autoFuel2.setStyle("-fx-font: 24 cambria");
+                        autoFuel2.setFill(Color.MEDIUMBLUE);
+                        data.add(autoFuel2, 3, 2);
+
+                        Text autoFuel3 = new Text(avgAutoGearsText3.getText().toString());
+                        autoFuel3.setStyle("-fx-font: 24 cambria");
+                        autoFuel3.setFill(Color.MEDIUMBLUE);
+                        data.add(autoFuel3, 3, 3);
+
+                        Text autoFuel4 = new Text(avgAutoGearsText4.getText().toString());
+                        autoFuel4.setStyle("-fx-font: 24 cambria");
+                        autoFuel4.setFill(Color.MEDIUMBLUE);
+                        data.add(autoFuel4, 3, 4);
+
+                        Text autoFuel5 = new Text(avgAutoGearsText5.getText().toString());
+                        autoFuel5.setStyle("-fx-font: 24 cambria");
+                        autoFuel5.setFill(Color.MEDIUMBLUE);
+                        data.add(autoFuel5, 3, 5);
+
+                        Text autoFuel6 = new Text(avgAutoGearsText6.getText().toString());
+                        autoFuel6.setStyle("-fx-font: 24 cambria");
+                        autoFuel6.setFill(Color.MEDIUMBLUE);
+                        data.add(autoFuel6, 3, 6);
+
+                        Text autoFuel7 = new Text(avgAutoGearsText7.getText().toString());
+                        autoFuel7.setStyle("-fx-font: 24 cambria");
+                        autoFuel7.setFill(Color.MEDIUMBLUE);
+                        data.add(autoFuel7, 3, 7);
+
+                        Text autoFuel8 = new Text(avgAutoGearsText8.getText().toString());
+                        autoFuel8.setStyle("-fx-font: 24 cambria");
+                        autoFuel8.setFill(Color.MEDIUMBLUE);
+                        data.add(autoFuel8, 3, 8);
+
+                        Text teleFuel1 = new Text(avgTeleFuelText1.getText().toString());
+                        teleFuel1.setStyle("-fx-font: 24 cambria");
+                        teleFuel1.setFill(Color.MEDIUMBLUE);
+                        data.add(teleFuel1, 4, 1);
+
+                        Text teleFuel2 = new Text(avgTeleFuelText2.getText().toString());
+                        teleFuel2.setStyle("-fx-font: 24 cambria");
+                        teleFuel2.setFill(Color.MEDIUMBLUE);
+                        data.add(teleFuel2, 4, 2);
+
+                        Text teleFuel3 = new Text(avgTeleFuelText3.getText().toString());
+                        teleFuel3.setStyle("-fx-font: 24 cambria");
+                        teleFuel3.setFill(Color.MEDIUMBLUE);
+                        data.add(teleFuel3, 4, 3);
+
+                        Text teleFuel4 = new Text(avgTeleFuelText4.getText().toString());
+                        teleFuel4.setStyle("-fx-font: 24 cambria");
+                        teleFuel4.setFill(Color.MEDIUMBLUE);
+                        data.add(teleFuel4, 4, 4);
+
+                        Text teleFuel5 = new Text(avgTeleFuelText5.getText().toString());
+                        teleFuel5.setStyle("-fx-font: 24 cambria");
+                        teleFuel5.setFill(Color.MEDIUMBLUE);
+                        data.add(teleFuel5, 4, 5);
+
+                        Text teleFuel6 = new Text(avgTeleFuelText6.getText().toString());
+                        teleFuel6.setStyle("-fx-font: 24 cambria");
+                        teleFuel6.setFill(Color.MEDIUMBLUE);
+                        data.add(teleFuel6, 4, 6);
+
+                        Text teleFuel7 = new Text(avgTeleFuelText7.getText().toString());
+                        teleFuel7.setStyle("-fx-font: 24 cambria");
+                        teleFuel7.setFill(Color.MEDIUMBLUE);
+                        data.add(teleFuel7, 4, 7);
+
+                        Text teleFuel8 = new Text(avgTeleFuelText8.getText().toString());
+                        teleFuel8.setStyle("-fx-font: 24 cambria");
+                        teleFuel8.setFill(Color.MEDIUMBLUE);
+                        data.add(teleFuel8, 4, 8);
+
+                        Text climb1 = new Text(avgClimbsText1.getText().toString());
+                        climb1.setStyle("-fx-font: 24 cambria");
+                        climb1.setFill(Color.MEDIUMBLUE);
+                        data.add(climb1, 5, 1);
+
+                        Text climb2 = new Text(avgClimbsText2.getText().toString());
+                        climb2.setStyle("-fx-font: 24 cambria");
+                        climb2.setFill(Color.MEDIUMBLUE);
+                        data.add(climb2, 5, 2);
+
+                        Text climb3 = new Text(avgClimbsText3.getText().toString());
+                        climb3.setStyle("-fx-font: 24 cambria");
+                        climb3.setFill(Color.MEDIUMBLUE);
+                        data.add(climb3, 5, 3);
+
+                        Text climb4 = new Text(avgClimbsText4.getText().toString());
+                        climb4.setStyle("-fx-font: 24 cambria");
+                        climb4.setFill(Color.MEDIUMBLUE);
+                        data.add(climb4, 5, 4);
+
+                        Text climb5 = new Text(avgClimbsText5.getText().toString());
+                        climb5.setStyle("-fx-font: 24 cambria");
+                        climb5.setFill(Color.MEDIUMBLUE);
+                        data.add(climb5, 5, 5);
+
+                        Text climb6 = new Text(avgClimbsText6.getText().toString());
+                        climb6.setStyle("-fx-font: 24 cambria");
+                        climb6.setFill(Color.MEDIUMBLUE);
+                        data.add(climb6, 5, 6);
+
+                        Text climb7 = new Text(avgClimbsText7.getText().toString());
+                        climb7.setStyle("-fx-font: 24 cambria");
+                        climb7.setFill(Color.MEDIUMBLUE);
+                        data.add(climb7, 5, 7);
+
+                        Text climb8 = new Text(avgClimbsText8.getText().toString());
+                        climb8.setStyle("-fx-font: 24 cambria");
+                        climb8.setFill(Color.MEDIUMBLUE);
+                        data.add(climb8, 5, 8);
+
+                        Button autoGearsButton = new Button ("Auto Gears");
+                        autoGearsButton.setStyle("-fx-font: 24 cambria");
+                        data.add(autoGearsButton, 1, 0);
+                        autoGearsButton.setOnAction(new EventHandler<ActionEvent>() {
+                            @Override
+                            public void handle(ActionEvent event) {
+                                ArrayList<AllianceData> sortList = new ArrayList<AllianceData>();
+                                sortList.add(alliance1);
+                                sortList.add(alliance2);
+                                sortList.add(alliance3);
+                                sortList.add(alliance4);
+                                sortList.add(alliance5);
+                                sortList.add(alliance6);
+                                sortList.add(alliance7);
+                                sortList.add(alliance8);
+                                Collections.sort(sortList, new Comparator<AllianceData>() {
+                                    public int compare(AllianceData o1, AllianceData o2) {
+                                        if (o1.avgAutoGear == o2.avgAutoGear)
+                                            return 0;
+                                        return o1.avgAutoGear > o2.avgAutoGear ? -1 : 1;
+                                    }
+                                });
+                                autoGears1.setText(String.format("%3.1f", sortList.get(0).avgAutoGear));
+                                autoGears2.setText(String.format("%3.1f", sortList.get(1).avgAutoGear));
+                                autoGears3.setText(String.format("%3.1f", sortList.get(2).avgAutoGear));
+                                autoGears4.setText(String.format("%3.1f", sortList.get(3).avgAutoGear));
+                                autoGears5.setText(String.format("%3.1f", sortList.get(4).avgAutoGear));
+                                autoGears6.setText(String.format("%3.1f", sortList.get(5).avgAutoGear));
+                                autoGears7.setText(String.format("%3.1f", sortList.get(6).avgAutoGear));
+                                autoGears8.setText(String.format("%3.1f", sortList.get(7).avgAutoGear));
+
+                                teleGears1.setText(String.format("%3.1f", sortList.get(0).avgTeleGear));
+                                teleGears2.setText(String.format("%3.1f", sortList.get(1).avgTeleGear));
+                                teleGears3.setText(String.format("%3.1f", sortList.get(2).avgTeleGear));
+                                teleGears4.setText(String.format("%3.1f", sortList.get(3).avgTeleGear));
+                                teleGears5.setText(String.format("%3.1f", sortList.get(4).avgTeleGear));
+                                teleGears6.setText(String.format("%3.1f", sortList.get(5).avgTeleGear));
+                                teleGears7.setText(String.format("%3.1f", sortList.get(6).avgTeleGear));
+                                teleGears8.setText(String.format("%3.1f", sortList.get(7).avgTeleGear));
+
+                                autoFuel1.setText(String.format("%3.1f", sortList.get(0).avgAutoFuel));
+                                autoFuel2.setText(String.format("%3.1f", sortList.get(1).avgAutoFuel));
+                                autoFuel3.setText(String.format("%3.1f", sortList.get(2).avgAutoFuel));
+                                autoFuel4.setText(String.format("%3.1f", sortList.get(3).avgAutoFuel));
+                                autoFuel5.setText(String.format("%3.1f", sortList.get(4).avgAutoFuel));
+                                autoFuel6.setText(String.format("%3.1f", sortList.get(5).avgAutoFuel));
+                                autoFuel7.setText(String.format("%3.1f", sortList.get(6).avgAutoFuel));
+                                autoFuel8.setText(String.format("%3.1f", sortList.get(7).avgAutoFuel));
+
+                                teleFuel1.setText(String.format("%3.1f", sortList.get(0).avgTeleFuel));
+                                teleFuel2.setText(String.format("%3.1f", sortList.get(1).avgTeleFuel));
+                                teleFuel3.setText(String.format("%3.1f", sortList.get(2).avgTeleFuel));
+                                teleFuel4.setText(String.format("%3.1f", sortList.get(3).avgTeleFuel));
+                                teleFuel5.setText(String.format("%3.1f", sortList.get(4).avgTeleFuel));
+                                teleFuel6.setText(String.format("%3.1f", sortList.get(5).avgTeleFuel));
+                                teleFuel7.setText(String.format("%3.1f", sortList.get(6).avgTeleFuel));
+                                teleFuel8.setText(String.format("%3.1f", sortList.get(7).avgTeleFuel));
+
+                                climb1.setText(String.format("%3.1f", sortList.get(0).avgTeleClimb));
+                                climb2.setText(String.format("%3.1f", sortList.get(1).avgTeleClimb));
+                                climb3.setText(String.format("%3.1f", sortList.get(2).avgTeleClimb));
+                                climb4.setText(String.format("%3.1f", sortList.get(3).avgTeleClimb));
+                                climb5.setText(String.format("%3.1f", sortList.get(4).avgTeleClimb));
+                                climb6.setText(String.format("%3.1f", sortList.get(5).avgTeleClimb));
+                                climb7.setText(String.format("%3.1f", sortList.get(6).avgTeleClimb));
+                                climb8.setText(String.format("%3.1f", sortList.get(7).avgTeleClimb));
+
+                                alliance1Label.setText("Alliance " + Integer.toString(sortList.get(0).allianceNumber));
+                                alliance2Label.setText("Alliance " + Integer.toString(sortList.get(1).allianceNumber));
+                                alliance3Label.setText("Alliance " + Integer.toString(sortList.get(2).allianceNumber));
+                                alliance4Label.setText("Alliance " + Integer.toString(sortList.get(3).allianceNumber));
+                                alliance5Label.setText("Alliance " + Integer.toString(sortList.get(4).allianceNumber));
+                                alliance6Label.setText("Alliance " + Integer.toString(sortList.get(5).allianceNumber));
+                                alliance7Label.setText("Alliance " +Integer.toString(sortList.get(6).allianceNumber));
+                                alliance8Label.setText("Alliance " + Integer.toString(sortList.get(7).allianceNumber));
+                            }});
+                        Button teleGearsButton = new Button ("Tele Gears");
+                        teleGearsButton.setStyle("-fx-font: 24 cambria");
+                        data.add(teleGearsButton, 2, 0);
+                        teleGearsButton.setOnAction(new EventHandler<ActionEvent>() {
+                            @Override
+                            public void handle(ActionEvent event) {
+                                ArrayList<AllianceData> sortList = new ArrayList<AllianceData>();
+                                sortList.add(alliance1);
+                                sortList.add(alliance2);
+                                sortList.add(alliance3);
+                                sortList.add(alliance4);
+                                sortList.add(alliance5);
+                                sortList.add(alliance6);
+                                sortList.add(alliance7);
+                                sortList.add(alliance8);
+                                Collections.sort(sortList, new Comparator<AllianceData>() {
+                                    public int compare(AllianceData o1, AllianceData o2) {
+                                        if (o1.avgTeleGear == o2.avgTeleGear)
+                                            return 0;
+                                        return o1.avgTeleGear > o2.avgTeleGear ? -1 : 1;
+                                    }
+                                });
+                                autoGears1.setText(String.format("%3.1f", sortList.get(0).avgAutoGear));
+                                autoGears2.setText(String.format("%3.1f", sortList.get(1).avgAutoGear));
+                                autoGears3.setText(String.format("%3.1f", sortList.get(2).avgAutoGear));
+                                autoGears4.setText(String.format("%3.1f", sortList.get(3).avgAutoGear));
+                                autoGears5.setText(String.format("%3.1f", sortList.get(4).avgAutoGear));
+                                autoGears6.setText(String.format("%3.1f", sortList.get(5).avgAutoGear));
+                                autoGears7.setText(String.format("%3.1f", sortList.get(6).avgAutoGear));
+                                autoGears8.setText(String.format("%3.1f", sortList.get(7).avgAutoGear));
+
+                                teleGears1.setText(String.format("%3.1f", sortList.get(0).avgTeleGear));
+                                teleGears2.setText(String.format("%3.1f", sortList.get(1).avgTeleGear));
+                                teleGears3.setText(String.format("%3.1f", sortList.get(2).avgTeleGear));
+                                teleGears4.setText(String.format("%3.1f", sortList.get(3).avgTeleGear));
+                                teleGears5.setText(String.format("%3.1f", sortList.get(4).avgTeleGear));
+                                teleGears6.setText(String.format("%3.1f", sortList.get(5).avgTeleGear));
+                                teleGears7.setText(String.format("%3.1f", sortList.get(6).avgTeleGear));
+                                teleGears8.setText(String.format("%3.1f", sortList.get(7).avgTeleGear));
+
+                                autoFuel1.setText(String.format("%3.1f", sortList.get(0).avgAutoFuel));
+                                autoFuel2.setText(String.format("%3.1f", sortList.get(1).avgAutoFuel));
+                                autoFuel3.setText(String.format("%3.1f", sortList.get(2).avgAutoFuel));
+                                autoFuel4.setText(String.format("%3.1f", sortList.get(3).avgAutoFuel));
+                                autoFuel5.setText(String.format("%3.1f", sortList.get(4).avgAutoFuel));
+                                autoFuel6.setText(String.format("%3.1f", sortList.get(5).avgAutoFuel));
+                                autoFuel7.setText(String.format("%3.1f", sortList.get(6).avgAutoFuel));
+                                autoFuel8.setText(String.format("%3.1f", sortList.get(7).avgAutoFuel));
+
+                                teleFuel1.setText(String.format("%3.1f", sortList.get(0).avgTeleFuel));
+                                teleFuel2.setText(String.format("%3.1f", sortList.get(1).avgTeleFuel));
+                                teleFuel3.setText(String.format("%3.1f", sortList.get(2).avgTeleFuel));
+                                teleFuel4.setText(String.format("%3.1f", sortList.get(3).avgTeleFuel));
+                                teleFuel5.setText(String.format("%3.1f", sortList.get(4).avgTeleFuel));
+                                teleFuel6.setText(String.format("%3.1f", sortList.get(5).avgTeleFuel));
+                                teleFuel7.setText(String.format("%3.1f", sortList.get(6).avgTeleFuel));
+                                teleFuel8.setText(String.format("%3.1f", sortList.get(7).avgTeleFuel));
+
+                                climb1.setText(String.format("%3.1f", sortList.get(0).avgTeleClimb));
+                                climb2.setText(String.format("%3.1f", sortList.get(1).avgTeleClimb));
+                                climb3.setText(String.format("%3.1f", sortList.get(2).avgTeleClimb));
+                                climb4.setText(String.format("%3.1f", sortList.get(3).avgTeleClimb));
+                                climb5.setText(String.format("%3.1f", sortList.get(4).avgTeleClimb));
+                                climb6.setText(String.format("%3.1f", sortList.get(5).avgTeleClimb));
+                                climb7.setText(String.format("%3.1f", sortList.get(6).avgTeleClimb));
+                                climb8.setText(String.format("%3.1f", sortList.get(7).avgTeleClimb));
+
+                                alliance1Label.setText("Alliance " + Integer.toString(sortList.get(0).allianceNumber));
+                                alliance2Label.setText("Alliance " + Integer.toString(sortList.get(1).allianceNumber));
+                                alliance3Label.setText("Alliance " + Integer.toString(sortList.get(2).allianceNumber));
+                                alliance4Label.setText("Alliance " + Integer.toString(sortList.get(3).allianceNumber));
+                                alliance5Label.setText("Alliance " + Integer.toString(sortList.get(4).allianceNumber));
+                                alliance6Label.setText("Alliance " + Integer.toString(sortList.get(5).allianceNumber));
+                                alliance7Label.setText("Alliance " +Integer.toString(sortList.get(6).allianceNumber));
+                                alliance8Label.setText("Alliance " + Integer.toString(sortList.get(7).allianceNumber));
+                            }});
+
+                        Button autoFuelButton = new Button ("Auto Fuel");
+                        autoFuelButton.setStyle("-fx-font: 24 cambria");
+                        data.add(autoFuelButton, 3, 0);
+                                autoFuelButton.setOnAction(new EventHandler<ActionEvent>() {
+                                    @Override
+                                    public void handle(ActionEvent event) {
+                                        ArrayList<AllianceData> sortList = new ArrayList<AllianceData>();
+                                        sortList.add(alliance1);
+                                        sortList.add(alliance2);
+                                        sortList.add(alliance3);
+                                        sortList.add(alliance4);
+                                        sortList.add(alliance5);
+                                        sortList.add(alliance6);
+                                        sortList.add(alliance7);
+                                        sortList.add(alliance8);
+                                        Collections.sort(sortList, new Comparator<AllianceData>() {
+                                            public int compare(AllianceData o1, AllianceData o2) {
+                                                if (o1.avgAutoFuel == o2.avgAutoFuel)
+                                                    return 0;
+                                                return o1.avgAutoFuel > o2.avgAutoFuel ? -1 : 1;
+                                            }
+                                        });
+                                        autoGears1.setText(String.format("%3.1f", sortList.get(0).avgAutoGear));
+                                        autoGears2.setText(String.format("%3.1f", sortList.get(1).avgAutoGear));
+                                        autoGears3.setText(String.format("%3.1f", sortList.get(2).avgAutoGear));
+                                        autoGears4.setText(String.format("%3.1f", sortList.get(3).avgAutoGear));
+                                        autoGears5.setText(String.format("%3.1f", sortList.get(4).avgAutoGear));
+                                        autoGears6.setText(String.format("%3.1f", sortList.get(5).avgAutoGear));
+                                        autoGears7.setText(String.format("%3.1f", sortList.get(6).avgAutoGear));
+                                        autoGears8.setText(String.format("%3.1f", sortList.get(7).avgAutoGear));
+
+                                        teleGears1.setText(String.format("%3.1f", sortList.get(0).avgTeleGear));
+                                        teleGears2.setText(String.format("%3.1f", sortList.get(1).avgTeleGear));
+                                        teleGears3.setText(String.format("%3.1f", sortList.get(2).avgTeleGear));
+                                        teleGears4.setText(String.format("%3.1f", sortList.get(3).avgTeleGear));
+                                        teleGears5.setText(String.format("%3.1f", sortList.get(4).avgTeleGear));
+                                        teleGears6.setText(String.format("%3.1f", sortList.get(5).avgTeleGear));
+                                        teleGears7.setText(String.format("%3.1f", sortList.get(6).avgTeleGear));
+                                        teleGears8.setText(String.format("%3.1f", sortList.get(7).avgTeleGear));
+
+                                        autoFuel1.setText(String.format("%3.1f", sortList.get(0).avgAutoFuel));
+                                        autoFuel2.setText(String.format("%3.1f", sortList.get(1).avgAutoFuel));
+                                        autoFuel3.setText(String.format("%3.1f", sortList.get(2).avgAutoFuel));
+                                        autoFuel4.setText(String.format("%3.1f", sortList.get(3).avgAutoFuel));
+                                        autoFuel5.setText(String.format("%3.1f", sortList.get(4).avgAutoFuel));
+                                        autoFuel6.setText(String.format("%3.1f", sortList.get(5).avgAutoFuel));
+                                        autoFuel7.setText(String.format("%3.1f", sortList.get(6).avgAutoFuel));
+                                        autoFuel8.setText(String.format("%3.1f", sortList.get(7).avgAutoFuel));
+
+                                        teleFuel1.setText(String.format("%3.1f", sortList.get(0).avgTeleFuel));
+                                        teleFuel2.setText(String.format("%3.1f", sortList.get(1).avgTeleFuel));
+                                        teleFuel3.setText(String.format("%3.1f", sortList.get(2).avgTeleFuel));
+                                        teleFuel4.setText(String.format("%3.1f", sortList.get(3).avgTeleFuel));
+                                        teleFuel5.setText(String.format("%3.1f", sortList.get(4).avgTeleFuel));
+                                        teleFuel6.setText(String.format("%3.1f", sortList.get(5).avgTeleFuel));
+                                        teleFuel7.setText(String.format("%3.1f", sortList.get(6).avgTeleFuel));
+                                        teleFuel8.setText(String.format("%3.1f", sortList.get(7).avgTeleFuel));
+
+                                        climb1.setText(String.format("%3.1f", sortList.get(0).avgTeleClimb));
+                                        climb2.setText(String.format("%3.1f", sortList.get(1).avgTeleClimb));
+                                        climb3.setText(String.format("%3.1f", sortList.get(2).avgTeleClimb));
+                                        climb4.setText(String.format("%3.1f", sortList.get(3).avgTeleClimb));
+                                        climb5.setText(String.format("%3.1f", sortList.get(4).avgTeleClimb));
+                                        climb6.setText(String.format("%3.1f", sortList.get(5).avgTeleClimb));
+                                        climb7.setText(String.format("%3.1f", sortList.get(6).avgTeleClimb));
+                                        climb8.setText(String.format("%3.1f", sortList.get(7).avgTeleClimb));
+
+                                        alliance1Label.setText("Alliance " + Integer.toString(sortList.get(0).allianceNumber));
+                                        alliance2Label.setText("Alliance " + Integer.toString(sortList.get(1).allianceNumber));
+                                        alliance3Label.setText("Alliance " + Integer.toString(sortList.get(2).allianceNumber));
+                                        alliance4Label.setText("Alliance " + Integer.toString(sortList.get(3).allianceNumber));
+                                        alliance5Label.setText("Alliance " + Integer.toString(sortList.get(4).allianceNumber));
+                                        alliance6Label.setText("Alliance " + Integer.toString(sortList.get(5).allianceNumber));
+                                        alliance7Label.setText("Alliance " +Integer.toString(sortList.get(6).allianceNumber));
+                                        alliance8Label.setText("Alliance " + Integer.toString(sortList.get(7).allianceNumber));
+                                    }});
+
+                        Button teleFuelButton = new Button ("Tele Fuel");
+                        teleFuelButton.setStyle("-fx-font: 24 cambria");
+                        data.add(teleFuelButton, 4, 0);
+                                        teleFuelButton.setOnAction(new EventHandler<ActionEvent>() {
+                                            @Override
+                                            public void handle(ActionEvent event) {
+                                                ArrayList<AllianceData> sortList = new ArrayList<AllianceData>();
+                                                sortList.add(alliance1);
+                                                sortList.add(alliance2);
+                                                sortList.add(alliance3);
+                                                sortList.add(alliance4);
+                                                sortList.add(alliance5);
+                                                sortList.add(alliance6);
+                                                sortList.add(alliance7);
+                                                sortList.add(alliance8);
+                                                Collections.sort(sortList, new Comparator<AllianceData>() {
+                                                    public int compare(AllianceData o1, AllianceData o2) {
+                                                        if (o1.avgTeleFuel == o2.avgTeleFuel)
+                                                            return 0;
+                                                        return o1.avgTeleFuel > o2.avgTeleFuel ? -1 : 1;
+                                                    }
+                                                });
+                                                autoGears1.setText(String.format("%3.1f", sortList.get(0).avgAutoGear));
+                                                autoGears2.setText(String.format("%3.1f", sortList.get(1).avgAutoGear));
+                                                autoGears3.setText(String.format("%3.1f", sortList.get(2).avgAutoGear));
+                                                autoGears4.setText(String.format("%3.1f", sortList.get(3).avgAutoGear));
+                                                autoGears5.setText(String.format("%3.1f", sortList.get(4).avgAutoGear));
+                                                autoGears6.setText(String.format("%3.1f", sortList.get(5).avgAutoGear));
+                                                autoGears7.setText(String.format("%3.1f", sortList.get(6).avgAutoGear));
+                                                autoGears8.setText(String.format("%3.1f", sortList.get(7).avgAutoGear));
+
+                                                teleGears1.setText(String.format("%3.1f", sortList.get(0).avgTeleGear));
+                                                teleGears2.setText(String.format("%3.1f", sortList.get(1).avgTeleGear));
+                                                teleGears3.setText(String.format("%3.1f", sortList.get(2).avgTeleGear));
+                                                teleGears4.setText(String.format("%3.1f", sortList.get(3).avgTeleGear));
+                                                teleGears5.setText(String.format("%3.1f", sortList.get(4).avgTeleGear));
+                                                teleGears6.setText(String.format("%3.1f", sortList.get(5).avgTeleGear));
+                                                teleGears7.setText(String.format("%3.1f", sortList.get(6).avgTeleGear));
+                                                teleGears8.setText(String.format("%3.1f", sortList.get(7).avgTeleGear));
+
+                                                autoFuel1.setText(String.format("%3.1f", sortList.get(0).avgAutoFuel));
+                                                autoFuel2.setText(String.format("%3.1f", sortList.get(1).avgAutoFuel));
+                                                autoFuel3.setText(String.format("%3.1f", sortList.get(2).avgAutoFuel));
+                                                autoFuel4.setText(String.format("%3.1f", sortList.get(3).avgAutoFuel));
+                                                autoFuel5.setText(String.format("%3.1f", sortList.get(4).avgAutoFuel));
+                                                autoFuel6.setText(String.format("%3.1f", sortList.get(5).avgAutoFuel));
+                                                autoFuel7.setText(String.format("%3.1f", sortList.get(6).avgAutoFuel));
+                                                autoFuel8.setText(String.format("%3.1f", sortList.get(7).avgAutoFuel));
+
+                                                teleFuel1.setText(String.format("%3.1f", sortList.get(0).avgTeleFuel));
+                                                teleFuel2.setText(String.format("%3.1f", sortList.get(1).avgTeleFuel));
+                                                teleFuel3.setText(String.format("%3.1f", sortList.get(2).avgTeleFuel));
+                                                teleFuel4.setText(String.format("%3.1f", sortList.get(3).avgTeleFuel));
+                                                teleFuel5.setText(String.format("%3.1f", sortList.get(4).avgTeleFuel));
+                                                teleFuel6.setText(String.format("%3.1f", sortList.get(5).avgTeleFuel));
+                                                teleFuel7.setText(String.format("%3.1f", sortList.get(6).avgTeleFuel));
+                                                teleFuel8.setText(String.format("%3.1f", sortList.get(7).avgTeleFuel));
+
+                                                climb1.setText(String.format("%3.1f", sortList.get(0).avgTeleClimb));
+                                                climb2.setText(String.format("%3.1f", sortList.get(1).avgTeleClimb));
+                                                climb3.setText(String.format("%3.1f", sortList.get(2).avgTeleClimb));
+                                                climb4.setText(String.format("%3.1f", sortList.get(3).avgTeleClimb));
+                                                climb5.setText(String.format("%3.1f", sortList.get(4).avgTeleClimb));
+                                                climb6.setText(String.format("%3.1f", sortList.get(5).avgTeleClimb));
+                                                climb7.setText(String.format("%3.1f", sortList.get(6).avgTeleClimb));
+                                                climb8.setText(String.format("%3.1f", sortList.get(7).avgTeleClimb));
+
+                                                alliance1Label.setText("Alliance " + Integer.toString(sortList.get(0).allianceNumber));
+                                                alliance2Label.setText("Alliance " + Integer.toString(sortList.get(1).allianceNumber));
+                                                alliance3Label.setText("Alliance " + Integer.toString(sortList.get(2).allianceNumber));
+                                                alliance4Label.setText("Alliance " + Integer.toString(sortList.get(3).allianceNumber));
+                                                alliance5Label.setText("Alliance " + Integer.toString(sortList.get(4).allianceNumber));
+                                                alliance6Label.setText("Alliance " + Integer.toString(sortList.get(5).allianceNumber));
+                                                alliance7Label.setText("Alliance " +Integer.toString(sortList.get(6).allianceNumber));
+                                                alliance8Label.setText("Alliance " + Integer.toString(sortList.get(7).allianceNumber));
+                                            }});
+
+                        Button climbsButton = new Button ("Climbs");
+                        climbsButton.setStyle("-fx-font: 24 cambria");
+                        data.add(climbsButton, 5, 0);
+                        climbsButton.setOnAction(new EventHandler<ActionEvent>() {
+                                         @Override
+                                             public void handle(ActionEvent event) {
+                                             ArrayList<AllianceData> sortList = new ArrayList<AllianceData>();
+                                             sortList.add(alliance1);
+                                             sortList.add(alliance2);
+                                             sortList.add(alliance3);
+                                             sortList.add(alliance4);
+                                             sortList.add(alliance5);
+                                             sortList.add(alliance6);
+                                             sortList.add(alliance7);
+                                             sortList.add(alliance8);
+                                             Collections.sort(sortList, new Comparator<AllianceData>() {
+                                                 public int compare(AllianceData o1, AllianceData o2) {
+                                                     if (o1.avgTeleClimb == o2.avgTeleClimb)
+                                                         return 0;
+                                                     return o1.avgTeleClimb > o2.avgTeleClimb ? -1 : 1;
+                                                 }
+                                             });
+                                             autoGears1.setText(String.format("%3.1f", sortList.get(0).avgAutoGear));
+                                             autoGears2.setText(String.format("%3.1f", sortList.get(1).avgAutoGear));
+                                             autoGears3.setText(String.format("%3.1f", sortList.get(2).avgAutoGear));
+                                             autoGears4.setText(String.format("%3.1f", sortList.get(3).avgAutoGear));
+                                             autoGears5.setText(String.format("%3.1f", sortList.get(4).avgAutoGear));
+                                             autoGears6.setText(String.format("%3.1f", sortList.get(5).avgAutoGear));
+                                             autoGears7.setText(String.format("%3.1f", sortList.get(6).avgAutoGear));
+                                             autoGears8.setText(String.format("%3.1f", sortList.get(7).avgAutoGear));
+
+                                             teleGears1.setText(String.format("%3.1f", sortList.get(0).avgTeleGear));
+                                             teleGears2.setText(String.format("%3.1f", sortList.get(1).avgTeleGear));
+                                             teleGears3.setText(String.format("%3.1f", sortList.get(2).avgTeleGear));
+                                             teleGears4.setText(String.format("%3.1f", sortList.get(3).avgTeleGear));
+                                             teleGears5.setText(String.format("%3.1f", sortList.get(4).avgTeleGear));
+                                             teleGears6.setText(String.format("%3.1f", sortList.get(5).avgTeleGear));
+                                             teleGears7.setText(String.format("%3.1f", sortList.get(6).avgTeleGear));
+                                             teleGears8.setText(String.format("%3.1f", sortList.get(7).avgTeleGear));
+
+                                             autoFuel1.setText(String.format("%3.1f", sortList.get(0).avgAutoFuel));
+                                             autoFuel2.setText(String.format("%3.1f", sortList.get(1).avgAutoFuel));
+                                             autoFuel3.setText(String.format("%3.1f", sortList.get(2).avgAutoFuel));
+                                             autoFuel4.setText(String.format("%3.1f", sortList.get(3).avgAutoFuel));
+                                             autoFuel5.setText(String.format("%3.1f", sortList.get(4).avgAutoFuel));
+                                             autoFuel6.setText(String.format("%3.1f", sortList.get(5).avgAutoFuel));
+                                             autoFuel7.setText(String.format("%3.1f", sortList.get(6).avgAutoFuel));
+                                             autoFuel8.setText(String.format("%3.1f", sortList.get(7).avgAutoFuel));
+
+                                             teleFuel1.setText(String.format("%3.1f", sortList.get(0).avgTeleFuel));
+                                             teleFuel2.setText(String.format("%3.1f", sortList.get(1).avgTeleFuel));
+                                             teleFuel3.setText(String.format("%3.1f", sortList.get(2).avgTeleFuel));
+                                             teleFuel4.setText(String.format("%3.1f", sortList.get(3).avgTeleFuel));
+                                             teleFuel5.setText(String.format("%3.1f", sortList.get(4).avgTeleFuel));
+                                             teleFuel6.setText(String.format("%3.1f", sortList.get(5).avgTeleFuel));
+                                             teleFuel7.setText(String.format("%3.1f", sortList.get(6).avgTeleFuel));
+                                             teleFuel8.setText(String.format("%3.1f", sortList.get(7).avgTeleFuel));
+
+                                             climb1.setText(String.format("%3.1f", sortList.get(0).avgTeleClimb));
+                                             climb2.setText(String.format("%3.1f", sortList.get(1).avgTeleClimb));
+                                             climb3.setText(String.format("%3.1f", sortList.get(2).avgTeleClimb));
+                                             climb4.setText(String.format("%3.1f", sortList.get(3).avgTeleClimb));
+                                             climb5.setText(String.format("%3.1f", sortList.get(4).avgTeleClimb));
+                                             climb6.setText(String.format("%3.1f", sortList.get(5).avgTeleClimb));
+                                             climb7.setText(String.format("%3.1f", sortList.get(6).avgTeleClimb));
+                                             climb8.setText(String.format("%3.1f", sortList.get(7).avgTeleClimb));
+
+                                             alliance1Label.setText("Alliance " + Integer.toString(sortList.get(0).allianceNumber));
+                                             alliance2Label.setText("Alliance " + Integer.toString(sortList.get(1).allianceNumber));
+                                             alliance3Label.setText("Alliance " + Integer.toString(sortList.get(2).allianceNumber));
+                                             alliance4Label.setText("Alliance " + Integer.toString(sortList.get(3).allianceNumber));
+                                             alliance5Label.setText("Alliance " + Integer.toString(sortList.get(4).allianceNumber));
+                                             alliance6Label.setText("Alliance " + Integer.toString(sortList.get(5).allianceNumber));
+                                             alliance7Label.setText("Alliance " +Integer.toString(sortList.get(6).allianceNumber));
+                                             alliance8Label.setText("Alliance " + Integer.toString(sortList.get(7).allianceNumber));
+                                         }});
+                        dialog.setScene(dialogScene);
+                        dialog.show();
                     }});
 
 
@@ -902,51 +1706,17 @@ public class Main extends Application {
             alert.showAndWait();
             exit();
         }
-        if (adList2.size() == 0) {
+        //put in onclicks of buttons
+        if ((alliance1TextList.size() <= 3) &&
+            (alliance2TextList.size() <= 3) &&
+            (alliance3TextList.size() <= 3) &&
+            (alliance4TextList.size() <= 3) &&
+            (alliance5TextList.size() <= 3) &&
+            (alliance6TextList.size() <= 3) &&
+            (alliance7TextList.size() <= 3) &&
+            (alliance8TextList.size() <= 3)) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Database is empty");
-            alert.setHeaderText("Check the SQL database");
-            alert.showAndWait();
-            exit();
-        }
-        if (adList3.size() == 0) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Database is empty");
-            alert.setHeaderText("Check the SQL database");
-            alert.showAndWait();
-            exit();
-        }
-        if (adList4.size() == 0) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Database is empty");
-            alert.setHeaderText("Check the SQL database");
-            alert.showAndWait();
-            exit();
-        }
-        if (adList5.size() == 0) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Database is empty");
-            alert.setHeaderText("Check the SQL database");
-            alert.showAndWait();
-            exit();
-        }
-        if (adList6.size() == 0) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Database is empty");
-            alert.setHeaderText("Check the SQL database");
-            alert.showAndWait();
-            exit();
-        }
-        if (adList7.size() == 0) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Database is empty");
-            alert.setHeaderText("Check the SQL database");
-            alert.showAndWait();
-            exit();
-        }
-        if (adList8.size() == 0) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Database is empty");
+            alert.setTitle("24 Robots must be entered into the boxes to open this ");
             alert.setHeaderText("Check the SQL database");
             alert.showAndWait();
             exit();
@@ -965,7 +1735,7 @@ public class Main extends Application {
         robotTarget.setPrefSize(125,575);
         robotTarget.toBack();
 
-        final Rectangle alliance1Rect = new Rectangle(alliance1TextX, alliance1TextY, 160, 50);
+        final Rectangle alliance1Rect = new Rectangle(alliance1TextX, alliance1TextY, 160, 40);
         alliance1Rect.setFill(null);
         alliance1Rect.setStroke(Color.MEDIUMBLUE);
         alliance1Rect.toBack();
@@ -975,10 +1745,10 @@ public class Main extends Application {
         );
         alliance1Target.setLayoutX(alliance1TextX);
         alliance1Target.setLayoutY(alliance1TextY);
-        alliance1Target.setPrefSize(160,50);
+        alliance1Target.setPrefSize(160,40);
         alliance1Target.toBack();
 
-        final Rectangle alliance2Rect = new Rectangle(alliance2TextX, alliance2TextY, 160, 50);
+        final Rectangle alliance2Rect = new Rectangle(alliance2TextX, alliance2TextY, 160, 40);
         alliance2Rect.setFill(null);
         alliance2Rect.setStroke(Color.MEDIUMBLUE);
         alliance2Rect.toBack();
@@ -988,10 +1758,10 @@ public class Main extends Application {
         );
         alliance2Target.setLayoutX(alliance2TextX);
         alliance2Target.setLayoutY(alliance2TextY);
-        alliance2Target.setPrefSize(160,50);
+        alliance2Target.setPrefSize(160,40);
         alliance2Target.toBack();
 
-        final Rectangle alliance3Rect = new Rectangle(alliance3TextX, alliance3TextY, 160, 50);
+        final Rectangle alliance3Rect = new Rectangle(alliance3TextX, alliance3TextY, 160, 40);
         alliance3Rect.setFill(null);
         alliance3Rect.setStroke(Color.MEDIUMBLUE);
         alliance3Rect.toBack();
@@ -1001,10 +1771,10 @@ public class Main extends Application {
         );
         alliance3Target.setLayoutX(alliance3TextX);
         alliance3Target.setLayoutY(alliance3TextY);
-        alliance3Target.setPrefSize(160,50);
+        alliance3Target.setPrefSize(160,40);
         alliance3Target.toBack();
 
-        final Rectangle alliance4Rect = new Rectangle(alliance4TextX, alliance4TextY, 160, 50);
+        final Rectangle alliance4Rect = new Rectangle(alliance4TextX, alliance4TextY, 160, 40);
         alliance4Rect.setFill(null);
         alliance4Rect.setStroke(Color.MEDIUMBLUE);
         alliance4Rect.toBack();
@@ -1014,10 +1784,10 @@ public class Main extends Application {
         );
         alliance4Target.setLayoutX(alliance4TextX);
         alliance4Target.setLayoutY(alliance4TextY);
-        alliance4Target.setPrefSize(160,50);
+        alliance4Target.setPrefSize(160,40);
         alliance4Target.toBack();
 
-        final Rectangle alliance5Rect = new Rectangle(alliance5TextX, alliance5TextY, 160, 50);
+        final Rectangle alliance5Rect = new Rectangle(alliance5TextX, alliance5TextY, 160, 40);
         alliance5Rect.setFill(null);
         alliance5Rect.setStroke(Color.MEDIUMBLUE);
         alliance5Rect.toBack();
@@ -1027,10 +1797,10 @@ public class Main extends Application {
         );
         alliance5Target.setLayoutX(alliance5TextX);
         alliance5Target.setLayoutY(alliance5TextY);
-        alliance5Target.setPrefSize(160,50);
+        alliance5Target.setPrefSize(160,40);
         alliance5Target.toBack();
 
-        final Rectangle alliance6Rect = new Rectangle(alliance6TextX, alliance6TextY, 160, 50);
+        final Rectangle alliance6Rect = new Rectangle(alliance6TextX, alliance6TextY, 160, 40);
         alliance6Rect.setFill(null);
         alliance6Rect.setStroke(Color.MEDIUMBLUE);
         alliance6Rect.toBack();
@@ -1040,10 +1810,10 @@ public class Main extends Application {
         );
         alliance6Target.setLayoutX(alliance6TextX);
         alliance6Target.setLayoutY(alliance6TextY);
-        alliance6Target.setPrefSize(160,50);
+        alliance6Target.setPrefSize(160,40);
         alliance6Target.toBack();
 
-        final Rectangle alliance7Rect = new Rectangle(alliance7TextX, alliance7TextY, 160, 50);
+        final Rectangle alliance7Rect = new Rectangle(alliance7TextX, alliance7TextY, 160, 40);
         alliance7Rect.setFill(null);
         alliance7Rect.setStroke(Color.MEDIUMBLUE);
         alliance7Rect.toBack();
@@ -1053,10 +1823,10 @@ public class Main extends Application {
         );
         alliance7Target.setLayoutX(alliance7TextX);
         alliance7Target.setLayoutY(alliance7TextY);
-        alliance7Target.setPrefSize(160,50);
+        alliance7Target.setPrefSize(160,40);
         alliance7Target.toBack();
 
-        final Rectangle alliance8Rect = new Rectangle(alliance8TextX, alliance8TextY, 160, 50);
+        final Rectangle alliance8Rect = new Rectangle(alliance8TextX, alliance8TextY, 160, 40);
         alliance8Rect.setFill(null);
         alliance8Rect.setStroke(Color.MEDIUMBLUE);
         alliance8Rect.toBack();
@@ -1066,7 +1836,7 @@ public class Main extends Application {
         );
         alliance8Target.setLayoutX(alliance8TextX);
         alliance8Target.setLayoutY(alliance8TextY);
-        alliance8Target.setPrefSize(160,50);
+        alliance8Target.setPrefSize(160,40);
         alliance8Target.toBack();
 
         //final Text allianceTargetText = new Text(allianceTextX, allianceTextY+15,"Add to Alliance");
@@ -1077,7 +1847,7 @@ public class Main extends Application {
         for (int teamNum : teamList) {
             //System.out.println(teamNum);
             Text teamText = new Text(0,0,Integer.toString(teamNum));
-            teamText.setStyle("-fx-font: 15 cambria");
+            teamText.setStyle("-fx-font: 12 cambria");
             if (teamNum == 1153) {
                 teamText.setFill(RED);
             }
@@ -1156,34 +1926,42 @@ public class Main extends Application {
 
                     if (isInAlliance2(t.getText())) {
                         alliance2TextList.remove(t);
+                        resetData(2);
                         placeAlliance2();
 
                     } else if (isInAlliance1(t.getText())) {
                         alliance1TextList.remove(t);
+                        resetData(1);
                         placeAlliance1();
 
                     } else if (isInAlliance3(t.getText())) {
                         alliance3TextList.remove(t);
+                        resetData(3);
                         placeAlliance3();
 
                     } else if (isInAlliance4(t.getText())) {
                         alliance4TextList.remove(t);
+                        resetData(4);
                         placeAlliance4();
 
                     } else if (isInAlliance5(t.getText())) {
                         alliance5TextList.remove(t);
+                        resetData(5);
                         placeAlliance5();
 
                     } else if (isInAlliance6(t.getText())) {
                         alliance6TextList.remove(t);
+                        resetData(6);
                         placeAlliance6();
 
                     } else if (isInAlliance7(t.getText())) {
                         alliance7TextList.remove(t);
+                        resetData(7);
                         placeAlliance7();
 
                     }  else if (isInAlliance8(t.getText())) {
                         alliance8TextList.remove(t);
+                        resetData(8);
                         placeAlliance8();
                     }
                     robotTextList.add(t);
@@ -1229,7 +2007,7 @@ public class Main extends Application {
         alliance1Target.setOnDragDropped(new EventHandler<DragEvent>() {
             @Override
             public void handle(DragEvent event) {
-                //System.out.println("dragedDropped");
+                //System.out.println("draggedDropped");
                 Dragboard db = event.getDragboard();
                 boolean success = false;
                 if (db.hasString()) {
@@ -1243,30 +2021,37 @@ public class Main extends Application {
 
                     } else if (isInAlliance2(t.getText())) {
                         alliance2TextList.remove(t);
+                        resetData(2);
                         placeAlliance2();
 
                     } else if (isInAlliance3(t.getText())) {
                         alliance3TextList.remove(t);
+                        resetData(3);
                         placeAlliance3();
 
                     } else if (isInAlliance4(t.getText())) {
                         alliance4TextList.remove(t);
+                        resetData(4);
                         placeAlliance4();
 
                     } else if (isInAlliance5(t.getText())) {
                         alliance5TextList.remove(t);
+                        resetData(5);
                         placeAlliance5();
 
                     } else if (isInAlliance6(t.getText())) {
                         alliance6TextList.remove(t);
+                        resetData(6);
                         placeAlliance6();
 
                     } else if (isInAlliance7(t.getText())) {
                         alliance7TextList.remove(t);
+                        resetData(7);
                         placeAlliance7();
 
                     }  else if (isInAlliance8(t.getText())) {
                         alliance8TextList.remove(t);
+                        resetData(8);
                         placeAlliance8();
                     }
                     alliance1TextList.add(t);
@@ -1328,30 +2113,37 @@ public class Main extends Application {
 
                     } else if (isInAlliance1(t.getText())) {
                         alliance1TextList.remove(t);
+                        resetData(1);
                         placeAlliance1();
 
                     } else if (isInAlliance3(t.getText())) {
                         alliance3TextList.remove(t);
+                        resetData(3);
                         placeAlliance3();
 
                     } else if (isInAlliance4(t.getText())) {
                         alliance4TextList.remove(t);
+                        resetData(4);
                         placeAlliance4();
 
                     } else if (isInAlliance5(t.getText())) {
                         alliance5TextList.remove(t);
+                        resetData(5);
                         placeAlliance5();
 
                     } else if (isInAlliance6(t.getText())) {
                         alliance6TextList.remove(t);
+                        resetData(6);
                         placeAlliance6();
 
                     } else if (isInAlliance7(t.getText())) {
                         alliance7TextList.remove(t);
+                        resetData(7);
                         placeAlliance7();
 
                     }  else if (isInAlliance8(t.getText())) {
                         alliance8TextList.remove(t);
+                        resetData(8);
                         placeAlliance8();
                     }
                     alliance2TextList.add(t);
@@ -1408,34 +2200,42 @@ public class Main extends Application {
 
                     if (isInAlliance1(t.getText())) {
                         alliance1TextList.remove(t);
+                        resetData(1);
                         placeAlliance1();
 
                     } else if (isInAlliance2(t.getText())) {
                         alliance2TextList.remove(t);
+                        resetData(2);
                         placeAlliance2();
 
                     } else if (isInRobotTextList(t.getText())) {
                         robotTextList.remove(t);
+                        resetData(3);
                         placeRobots();
 
                     } else if (isInAlliance4(t.getText())) {
                         alliance4TextList.remove(t);
+                        resetData(4);
                         placeAlliance4();
 
                     } else if (isInAlliance5(t.getText())) {
                         alliance5TextList.remove(t);
+                        resetData(5);
                         placeAlliance5();
 
                     } else if (isInAlliance6(t.getText())) {
                         alliance6TextList.remove(t);
+                        resetData(6);
                         placeAlliance6();
 
                     } else if (isInAlliance7(t.getText())) {
                         alliance7TextList.remove(t);
+                        resetData(7);
                         placeAlliance7();
 
                     }  else if (isInAlliance8(t.getText())) {
                         alliance8TextList.remove(t);
+                        resetData(8);
                         placeAlliance8();
                     }
                     alliance3TextList.add(t);
@@ -1492,14 +2292,17 @@ public class Main extends Application {
 
                     if (isInAlliance1(t.getText())) {
                         alliance1TextList.remove(t);
+                        resetData(1);
                         placeAlliance1();
 
                     } else if (isInAlliance2(t.getText())) {
                         alliance2TextList.remove(t);
+                        resetData(2);
                         placeAlliance2();
 
                     } else if (isInAlliance3(t.getText())) {
                         alliance3TextList.remove(t);
+                        resetData(3);
                         placeAlliance3();
 
                     } else if (isInRobotTextList(t.getText())) {
@@ -1508,18 +2311,22 @@ public class Main extends Application {
 
                     } else if (isInAlliance5(t.getText())) {
                         alliance5TextList.remove(t);
+                        resetData(5);
                         placeAlliance5();
 
                     } else if (isInAlliance6(t.getText())) {
                         alliance6TextList.remove(t);
+                        resetData(6);
                         placeAlliance6();
 
                     } else if (isInAlliance7(t.getText())) {
                         alliance7TextList.remove(t);
+                        resetData(7);
                         placeAlliance7();
 
                     }  else if (isInAlliance8(t.getText())) {
                         alliance8TextList.remove(t);
+                        resetData(8);
                         placeAlliance8();
                     }
                     alliance4TextList.add(t);
@@ -1576,34 +2383,41 @@ public class Main extends Application {
 
                     if (isInAlliance1(t.getText())) {
                         alliance1TextList.remove(t);
+                        resetData(1);
                         placeAlliance1();
 
                     } else if (isInAlliance2(t.getText())) {
                         alliance2TextList.remove(t);
+                        resetData(2);
                         placeAlliance2();
 
                     } else if (isInAlliance3(t.getText())) {
                         alliance3TextList.remove(t);
+                        resetData(3);
                         placeAlliance3();
 
                     } else if (isInRobotTextList(t.getText())) {
                         robotTextList.remove(t);
                         placeRobots();
 
-                    } else if (isInAlliance5(t.getText())) {
-                        alliance5TextList.remove(t);
-                        placeAlliance5();
+                    } else if (isInAlliance4(t.getText())) {
+                        alliance4TextList.remove(t);
+                        resetData(4);
+                        placeAlliance4();
 
                     } else if (isInAlliance6(t.getText())) {
                         alliance6TextList.remove(t);
+                        resetData(6);
                         placeAlliance6();
 
                     } else if (isInAlliance7(t.getText())) {
                         alliance7TextList.remove(t);
+                        resetData(7);
                         placeAlliance7();
 
                     }  else if (isInAlliance8(t.getText())) {
                         alliance8TextList.remove(t);
+                        resetData(8);
                         placeAlliance8();
                     }
                     alliance5TextList.add(t);
@@ -1660,22 +2474,27 @@ public class Main extends Application {
 
                     if (isInAlliance1(t.getText())) {
                         alliance1TextList.remove(t);
+                        resetData(1);
                         placeAlliance1();
 
                     } else if (isInAlliance2(t.getText())) {
                         alliance2TextList.remove(t);
+                        resetData(2);
                         placeAlliance2();
 
                     } else if (isInAlliance3(t.getText())) {
                         alliance3TextList.remove(t);
+                        resetData(3);
                         placeAlliance3();
 
                     } else if (isInAlliance4(t.getText())) {
                         alliance4TextList.remove(t);
+                        resetData(4);
                         placeAlliance4();
 
                     } else if (isInAlliance5(t.getText())) {
                         alliance5TextList.remove(t);
+                        resetData(5);
                         placeAlliance5();
 
                     } else if (isInRobotTextList(t.getText())) {
@@ -1684,10 +2503,12 @@ public class Main extends Application {
 
                     } else if (isInAlliance7(t.getText())) {
                         alliance7TextList.remove(t);
+                        resetData(7);
                         placeAlliance7();
 
                     }  else if (isInAlliance8(t.getText())) {
                         alliance8TextList.remove(t);
+                        resetData(8);
                         placeAlliance8();
                     }
                     alliance6TextList.add(t);
@@ -1745,26 +2566,32 @@ public class Main extends Application {
 
                     if (isInAlliance1(t.getText())) {
                         alliance1TextList.remove(t);
+                        resetData(1);
                         placeAlliance1();
 
                     } else if (isInAlliance2(t.getText())) {
                         alliance2TextList.remove(t);
+                        resetData(2);
                         placeAlliance2();
 
                     } else if (isInAlliance3(t.getText())) {
                         alliance3TextList.remove(t);
+                        resetData(3);
                         placeAlliance3();
 
                     } else if (isInAlliance4(t.getText())) {
                         alliance4TextList.remove(t);
+                        resetData(4);
                         placeAlliance4();
 
                     } else if (isInAlliance5(t.getText())) {
                         alliance5TextList.remove(t);
+                        resetData(5);
                         placeAlliance5();
 
                     } else if (isInAlliance6(t.getText())) {
                         alliance6TextList.remove(t);
+                        resetData(6);
                         placeAlliance6();
 
                     } else if (isInRobotTextList(t.getText())) {
@@ -1773,6 +2600,7 @@ public class Main extends Application {
 
                     }  else if (isInAlliance8(t.getText())) {
                         alliance8TextList.remove(t);
+                        resetData(8);
                         placeAlliance8();
                     }
                     alliance7TextList.add(t);
@@ -1829,30 +2657,37 @@ public class Main extends Application {
 
                     if (isInAlliance1(t.getText())) {
                         alliance1TextList.remove(t);
+                        resetData(1);
                         placeAlliance1();
 
                     } else if (isInAlliance2(t.getText())) {
                         alliance2TextList.remove(t);
+                        resetData(2);
                         placeAlliance2();
 
                     } else if (isInAlliance3(t.getText())) {
                         alliance3TextList.remove(t);
+                        resetData(3);
                         placeAlliance3();
 
                     } else if (isInAlliance4(t.getText())) {
                         alliance4TextList.remove(t);
+                        resetData(4);
                         placeAlliance4();
 
                     } else if (isInAlliance5(t.getText())) {
                         alliance5TextList.remove(t);
+                        resetData(5);
                         placeAlliance5();
 
                     } else if (isInAlliance6(t.getText())) {
                         alliance6TextList.remove(t);
+                        resetData(6);
                         placeAlliance6();
 
                     } else if (isInAlliance7(t.getText())) {
                         alliance7TextList.remove(t);
+                        resetData(7);
                         placeAlliance7();
 
                     }  else if (isInRobotTextList(t.getText())) {
@@ -1894,11 +2729,11 @@ public class Main extends Application {
     // Display Alliance 1 Stats
     public void getStrongestAlliance1() {
         // first sort alliances by strength
-        Collections.sort(adList1, new Comparator<Alliance1Data>() {
-            public int compare(Alliance1Data o1, Alliance1Data o2) {
-                if (o1.alliance1Strength == o2.alliance1Strength)
+        Collections.sort(adList1, new Comparator<AllianceData>() {
+            public int compare(AllianceData o1, AllianceData o2) {
+                if (o1.allianceLowStrength == o2.allianceLowStrength)
                     return 0;
-                return o1.alliance1Strength > o2.alliance1Strength ? -1 : 1;
+                return o1.allianceLowStrength > o2.allianceLowStrength ? -1 : 1;
             }
         });
 
@@ -1923,20 +2758,29 @@ public class Main extends Application {
             int c =0;
             boolean keepSearching = true;
             while (keepSearching == true) {
-                if ((adList1.get(c).robot1A1 == r1 || adList1.get(c).robot2A1 == r1 || adList1.get(c).robot3A1 == r1) &&
-                        (adList1.get(c).robot1A1 == r2 || adList1.get(c).robot2A1 == r2 || adList1.get(c).robot3A1 == r2) &&
-                        (adList1.get(c).robot1A1 == r3 || adList1.get(c).robot2A1 == r3 || adList1.get(c).robot3A1 == r3)) {
+                if ((adList1.get(c).robot1 == r1 || adList1.get(c).robot2 == r1 || adList1.get(c).robot3 == r1) &&
+                        (adList1.get(c).robot1 == r2 || adList1.get(c).robot2 == r2 || adList1.get(c).robot3 == r2) &&
+                        (adList1.get(c).robot1 == r3 || adList1.get(c).robot2 == r3 || adList1.get(c).robot3 == r3)) {
                     keepSearching = false;
                     // set all of the robot numbers
-                    r1 = adList1.get(c).robot1A1;
-                    r2 = adList1.get(c).robot2A1;
-                    r3 = adList1.get(c).robot3A1;
-                    strength = adList1.get(c).alliance1Strength;
-                    avgAutoFuel = adList1.get(c).avgAutoFuel1;
-                    avgTeleFuel = adList1.get(c).avgTeleFuel1;
-                    avgAutoGears = adList1.get(c).avgAutoGear1;
-                    avgTeleGears = adList1.get(c).avgTeleGear1;
-                    avgClimbs = adList1.get(c).avgTeleClimb1;
+                    r1 = adList1.get(c).robot1;
+                    r2 = adList1.get(c).robot2;
+                    r3 = adList1.get(c).robot3;
+                    strength = adList1.get(c).allianceLowStrength;
+                    avgAutoFuel = adList1.get(c).avgAutoFuel;
+                    avgTeleFuel = adList1.get(c).avgTeleFuel;
+                    avgAutoGears = adList1.get(c).avgAutoGear;
+                    avgTeleGears = adList1.get(c).avgTeleGear;
+                    avgClimbs = adList1.get(c).avgTeleClimb;
+                    alliance1.allianceHighStrength = adList1.get(c).allianceHighStrength;
+                    alliance1.allianceLowStrength = adList1.get(c).allianceLowStrength;
+                    alliance1.allianceRawStrength = adList1.get(c).allianceRawStrength;
+                    alliance1.avgAutoGear = adList1.get(c).avgAutoGear;
+                    alliance1.avgTeleGear = adList1.get(c).avgTeleGear;
+                    alliance1.avgAutoFuel = adList1.get(c).avgAutoFuel;
+                    alliance1.avgTeleFuel = adList1.get(c).avgTeleFuel;
+                    alliance1.avgTeleClimb = adList1.get(c).avgTeleClimb;
+                    alliance1.allianceNumber = 1;
                 }
 
                 c++;
@@ -1951,16 +2795,17 @@ public class Main extends Application {
         avgAutoGearsText1.setText(String.format("%.1f", avgAutoGears));
         avgTeleGearsText1.setText(String.format("%.1f", avgTeleGears));
         avgClimbsText1.setText(String.format("%.1f", avgClimbs));
+
     }
 
     // Display Alliance 2 Stats
     public void getStrongestAlliance2() {
         // first sort alliances by strength
-        Collections.sort(adList2, new Comparator<Alliance2Data>() {
-            public int compare(Alliance2Data o1, Alliance2Data o2) {
-                if (o1.alliance2Strength == o2.alliance2Strength)
+        Collections.sort(adList2, new Comparator<AllianceData>() {
+            public int compare(AllianceData o1, AllianceData o2) {
+                if (o1.allianceLowStrength == o2.allianceLowStrength)
                     return 0;
-                return o1.alliance2Strength > o2.alliance2Strength ? -1 : 1;
+                return o1.allianceLowStrength > o2.allianceLowStrength ? -1 : 1;
             }
         });
 
@@ -1985,20 +2830,29 @@ public class Main extends Application {
             int c =0;
             boolean keepSearching = true;
             while (keepSearching == true) {
-                if ((adList2.get(c).robot1A2 == r1 || adList2.get(c).robot2A2 == r1 || adList2.get(c).robot3A2 == r1) &&
-                        (adList2.get(c).robot1A2 == r2 || adList2.get(c).robot2A2 == r2 || adList2.get(c).robot3A2 == r2) &&
-                        (adList2.get(c).robot1A2 == r3 || adList2.get(c).robot2A2 == r3 || adList2.get(c).robot3A2 == r3)) {
+                if ((adList2.get(c).robot1 == r1 || adList2.get(c).robot2 == r1 || adList2.get(c).robot3 == r1) &&
+                        (adList2.get(c).robot1 == r2 || adList2.get(c).robot2 == r2 || adList2.get(c).robot3 == r2) &&
+                        (adList2.get(c).robot1 == r3 || adList2.get(c).robot2 == r3 || adList2.get(c).robot3 == r3)) {
                     keepSearching = false;
                     // set all of the robot numbers
-                    r1 = adList2.get(c).robot1A2;
-                    r2 = adList2.get(c).robot2A2;
-                    r3 = adList2.get(c).robot3A2;
-                    strength = adList2.get(c).alliance2Strength;
-                    avgAutoFuel = adList2.get(c).avgAutoFuel2;
-                    avgTeleFuel = adList2.get(c).avgTeleFuel2;
-                    avgAutoGears = adList2.get(c).avgAutoGear2;
-                    avgTeleGears = adList2.get(c).avgTeleGear2;
-                    avgClimbs = adList2.get(c).avgTeleClimb2;
+                    r1 = adList2.get(c).robot1;
+                    r2 = adList2.get(c).robot2;
+                    r3 = adList2.get(c).robot3;
+                    strength = adList2.get(c).allianceLowStrength;
+                    avgAutoFuel = adList2.get(c).avgAutoFuel;
+                    avgTeleFuel = adList2.get(c).avgTeleFuel;
+                    avgAutoGears = adList2.get(c).avgAutoGear;
+                    avgTeleGears = adList2.get(c).avgTeleGear;
+                    avgClimbs = adList2.get(c).avgTeleClimb;
+                    alliance2.allianceHighStrength = adList2.get(c).allianceHighStrength;
+                    alliance2.allianceLowStrength = adList2.get(c).allianceLowStrength;
+                    alliance2.allianceRawStrength = adList2.get(c).allianceRawStrength;
+                    alliance2.avgAutoGear = adList2.get(c).avgAutoGear;
+                    alliance2.avgTeleGear = adList2.get(c).avgTeleGear;
+                    alliance2.avgAutoFuel = adList2.get(c).avgAutoFuel;
+                    alliance2.avgTeleFuel = adList2.get(c).avgTeleFuel;
+                    alliance2.avgTeleClimb = adList2.get(c).avgTeleClimb;
+                    alliance2.allianceNumber = 2;
 
                 }
                 c++;
@@ -2017,11 +2871,11 @@ public class Main extends Application {
     // Display Alliance 3 Stats
     public void getStrongestAlliance3() {
         // first sort alliances by strength
-        Collections.sort(adList3, new Comparator<Alliance3Data>() {
-            public int compare(Alliance3Data o1, Alliance3Data o2) {
-                if (o1.alliance3Strength == o2.alliance3Strength)
+        Collections.sort(adList3, new Comparator<AllianceData>() {
+            public int compare(AllianceData o1, AllianceData o2) {
+                if (o1.allianceLowStrength == o2.allianceLowStrength)
                     return 0;
-                return o1.alliance3Strength > o2.alliance3Strength ? -1 : 1;
+                return o1.allianceLowStrength > o2.allianceLowStrength ? -1 : 1;
             }
         });
 
@@ -2046,20 +2900,29 @@ public class Main extends Application {
             int c =0;
             boolean keepSearching = true;
             while (keepSearching == true) {
-                if ((adList3.get(c).robot1A3 == r1 || adList3.get(c).robot2A3 == r1 || adList3.get(c).robot3A3 == r1) &&
-                        (adList3.get(c).robot1A3 == r2 || adList3.get(c).robot2A3 == r2 || adList3.get(c).robot3A3 == r2) &&
-                        (adList3.get(c).robot1A3 == r3 || adList3.get(c).robot2A3 == r3 || adList3.get(c).robot3A3 == r3)) {
+                if ((adList3.get(c).robot1 == r1 || adList3.get(c).robot2 == r1 || adList3.get(c).robot3 == r1) &&
+                        (adList3.get(c).robot1 == r2 || adList3.get(c).robot2 == r2 || adList3.get(c).robot3 == r2) &&
+                        (adList3.get(c).robot1 == r3 || adList3.get(c).robot2 == r3 || adList3.get(c).robot3 == r3)) {
                     keepSearching = false;
                     // set all of the robot numbers
-                    r1 = adList3.get(c).robot1A3;
-                    r2 = adList3.get(c).robot2A3;
-                    r3 = adList3.get(c).robot3A3;
-                    strength = adList3.get(c).alliance3Strength;
-                    avgAutoFuel = adList3.get(c).avgAutoFuel3;
-                    avgTeleFuel = adList3.get(c).avgTeleFuel3;
-                    avgAutoGears = adList3.get(c).avgAutoGear3;
-                    avgTeleGears = adList3.get(c).avgTeleGear3;
-                    avgClimbs = adList3.get(c).avgTeleClimb3;
+                    r1 = adList3.get(c).robot1;
+                    r2 = adList3.get(c).robot2;
+                    r3 = adList3.get(c).robot3;
+                    strength = adList3.get(c).allianceLowStrength;
+                    avgAutoFuel = adList3.get(c).avgAutoFuel;
+                    avgTeleFuel = adList3.get(c).avgTeleFuel;
+                    avgAutoGears = adList3.get(c).avgAutoGear;
+                    avgTeleGears = adList3.get(c).avgTeleGear;
+                    avgClimbs = adList3.get(c).avgTeleClimb;
+                    alliance3.allianceHighStrength = adList3.get(c).allianceHighStrength;
+                    alliance3.allianceLowStrength = adList3.get(c).allianceLowStrength;
+                    alliance3.allianceRawStrength = adList3.get(c).allianceRawStrength;
+                    alliance3.avgAutoGear = adList3.get(c).avgAutoGear;
+                    alliance3.avgTeleGear = adList3.get(c).avgTeleGear;
+                    alliance3.avgAutoFuel = adList3.get(c).avgAutoFuel;
+                    alliance3.avgTeleFuel = adList3.get(c).avgTeleFuel;
+                    alliance3.avgTeleClimb = adList3.get(c).avgTeleClimb;
+                    alliance3.allianceNumber = 3;
 
                 }
                 c++;
@@ -2078,11 +2941,11 @@ public class Main extends Application {
     // Display Alliance 4 Stats
     public void getStrongestAlliance4() {
         // first sort alliances by strength
-        Collections.sort(adList4, new Comparator<Alliance4Data>() {
-            public int compare(Alliance4Data o1, Alliance4Data o2) {
-                if (o1.alliance4Strength == o2.alliance4Strength)
+        Collections.sort(adList4, new Comparator<AllianceData>() {
+            public int compare(AllianceData o1, AllianceData o2) {
+                if (o1.allianceLowStrength == o2.allianceLowStrength)
                     return 0;
-                return o1.alliance4Strength > o2.alliance4Strength ? -1 : 1;
+                return o1.allianceLowStrength > o2.allianceLowStrength ? -1 : 1;
             }
         });
 
@@ -2107,20 +2970,29 @@ public class Main extends Application {
             int c =0;
             boolean keepSearching = true;
             while (keepSearching == true) {
-                if ((adList4.get(c).robot1A4 == r1 || adList4.get(c).robot2A4 == r1 || adList4.get(c).robot3A4 == r1) &&
-                        (adList4.get(c).robot1A4 == r2 || adList4.get(c).robot2A4 == r2 || adList4.get(c).robot3A4 == r2) &&
-                        (adList4.get(c).robot1A4 == r3 || adList4.get(c).robot2A4 == r3 || adList4.get(c).robot3A4 == r3)) {
+                if ((adList4.get(c).robot1 == r1 || adList4.get(c).robot2 == r1 || adList4.get(c).robot3 == r1) &&
+                        (adList4.get(c).robot1 == r2 || adList4.get(c).robot2 == r2 || adList4.get(c).robot3 == r2) &&
+                        (adList4.get(c).robot1 == r3 || adList4.get(c).robot2 == r3 || adList4.get(c).robot3 == r3)) {
                     keepSearching = false;
                     // set all of the robot numbers
-                    r1 = adList4.get(c).robot1A4;
-                    r2 = adList4.get(c).robot2A4;
-                    r3 = adList4.get(c).robot3A4;
-                    strength = adList4.get(c).alliance4Strength;
-                    avgAutoFuel = adList4.get(c).avgAutoFuel4;
-                    avgTeleFuel = adList4.get(c).avgTeleFuel4;
-                    avgAutoGears = adList4.get(c).avgAutoGear4;
-                    avgTeleGears = adList4.get(c).avgTeleGear4;
-                    avgClimbs = adList4.get(c).avgTeleClimb4;
+                    r1 = adList4.get(c).robot1;
+                    r2 = adList4.get(c).robot2;
+                    r3 = adList4.get(c).robot3;
+                    strength = adList4.get(c).allianceLowStrength;
+                    avgAutoFuel = adList4.get(c).avgAutoFuel;
+                    avgTeleFuel = adList4.get(c).avgTeleFuel;
+                    avgAutoGears = adList4.get(c).avgAutoGear;
+                    avgTeleGears = adList4.get(c).avgTeleGear;
+                    avgClimbs = adList4.get(c).avgTeleClimb;
+                    alliance4.allianceHighStrength = adList4.get(c).allianceHighStrength;
+                    alliance4.allianceLowStrength = adList4.get(c).allianceLowStrength;
+                    alliance4.allianceRawStrength = adList4.get(c).allianceRawStrength;
+                    alliance4.avgAutoGear = adList4.get(c).avgAutoGear;
+                    alliance4.avgTeleGear = adList4.get(c).avgTeleGear;
+                    alliance4.avgAutoFuel = adList4.get(c).avgAutoFuel;
+                    alliance4.avgTeleFuel = adList4.get(c).avgTeleFuel;
+                    alliance4.avgTeleClimb = adList4.get(c).avgTeleClimb;
+                    alliance4.allianceNumber = 4;
 
                 }
                 c++;
@@ -2139,11 +3011,11 @@ public class Main extends Application {
     // Display Alliance 5 Stats
     public void getStrongestAlliance5() {
         // first sort alliances by strength
-        Collections.sort(adList5, new Comparator<Alliance5Data>() {
-            public int compare(Alliance5Data o1, Alliance5Data o2) {
-                if (o1.alliance5Strength == o2.alliance5Strength)
+        Collections.sort(adList5, new Comparator<AllianceData>() {
+            public int compare(AllianceData o1, AllianceData o2) {
+                if (o1.allianceLowStrength == o2.allianceLowStrength)
                     return 0;
-                return o1.alliance5Strength > o2.alliance5Strength ? -1 : 1;
+                return o1.allianceLowStrength > o2.allianceLowStrength ? -1 : 1;
             }
         });
 
@@ -2168,20 +3040,29 @@ public class Main extends Application {
             int c =0;
             boolean keepSearching = true;
             while (keepSearching == true) {
-                if ((adList5.get(c).robot1A5 == r1 || adList5.get(c).robot2A5 == r1 || adList5.get(c).robot3A5 == r1) &&
-                        (adList5.get(c).robot1A5 == r2 || adList5.get(c).robot2A5 == r2 || adList5.get(c).robot3A5 == r2) &&
-                        (adList5.get(c).robot1A5 == r3 || adList5.get(c).robot2A5 == r3 || adList5.get(c).robot3A5 == r3)) {
+                if ((adList5.get(c).robot1 == r1 || adList5.get(c).robot2 == r1 || adList5.get(c).robot3 == r1) &&
+                        (adList5.get(c).robot1 == r2 || adList5.get(c).robot2 == r2 || adList5.get(c).robot3 == r2) &&
+                        (adList5.get(c).robot1 == r3 || adList5.get(c).robot2 == r3 || adList5.get(c).robot3 == r3)) {
                     keepSearching = false;
                     // set all of the robot numbers
-                    r1 = adList5.get(c).robot1A5;
-                    r2 = adList5.get(c).robot2A5;
-                    r3 = adList5.get(c).robot3A5;
-                    strength = adList5.get(c).alliance5Strength;
-                    avgAutoFuel = adList5.get(c).avgAutoFuel5;
-                    avgTeleFuel = adList5.get(c).avgTeleFuel5;
-                    avgAutoGears = adList5.get(c).avgAutoGear5;
-                    avgTeleGears = adList5.get(c).avgTeleGear5;
-                    avgClimbs = adList5.get(c).avgTeleClimb5;
+                    r1 = adList5.get(c).robot1;
+                    r2 = adList5.get(c).robot2;
+                    r3 = adList5.get(c).robot3;
+                    strength = adList5.get(c).allianceLowStrength;
+                    avgAutoFuel = adList5.get(c).avgAutoFuel;
+                    avgTeleFuel = adList5.get(c).avgTeleFuel;
+                    avgAutoGears = adList5.get(c).avgAutoGear;
+                    avgTeleGears = adList5.get(c).avgTeleGear;
+                    avgClimbs = adList5.get(c).avgTeleClimb;
+                    alliance5.allianceHighStrength = adList5.get(c).allianceHighStrength;
+                    alliance5.allianceLowStrength = adList5.get(c).allianceLowStrength;
+                    alliance5.allianceRawStrength = adList5.get(c).allianceRawStrength;
+                    alliance5.avgAutoGear = adList5.get(c).avgAutoGear;
+                    alliance5.avgTeleGear = adList5.get(c).avgTeleGear;
+                    alliance5.avgAutoFuel = adList5.get(c).avgAutoFuel;
+                    alliance5.avgTeleFuel = adList5.get(c).avgTeleFuel;
+                    alliance5.avgTeleClimb = adList5.get(c).avgTeleClimb;
+                    alliance5.allianceNumber = 5;
 
                 }
                 c++;
@@ -2200,11 +3081,11 @@ public class Main extends Application {
     // Display Alliance 6 Stats
     public void getStrongestAlliance6() {
         // first sort alliances by strength
-        Collections.sort(adList6, new Comparator<Alliance6Data>() {
-            public int compare(Alliance6Data o1, Alliance6Data o2) {
-                if (o1.alliance6Strength == o2.alliance6Strength)
+        Collections.sort(adList6, new Comparator<AllianceData>() {
+            public int compare(AllianceData o1, AllianceData o2) {
+                if (o1.allianceLowStrength == o2.allianceLowStrength)
                     return 0;
-                return o1.alliance6Strength > o2.alliance6Strength ? -1 : 1;
+                return o1.allianceLowStrength > o2.allianceLowStrength ? -1 : 1;
             }
         });
 
@@ -2229,20 +3110,29 @@ public class Main extends Application {
             int c =0;
             boolean keepSearching = true;
             while (keepSearching == true) {
-                if ((adList6.get(c).robot1A6 == r1 || adList6.get(c).robot2A6 == r1 || adList6.get(c).robot3A6 == r1) &&
-                        (adList6.get(c).robot1A6 == r2 || adList6.get(c).robot2A6 == r2 || adList6.get(c).robot3A6 == r2) &&
-                        (adList6.get(c).robot1A6 == r3 || adList6.get(c).robot2A6 == r3 || adList6.get(c).robot3A6 == r3)) {
+                if ((adList6.get(c).robot1 == r1 || adList6.get(c).robot2 == r1 || adList6.get(c).robot3 == r1) &&
+                        (adList6.get(c).robot1 == r2 || adList6.get(c).robot2 == r2 || adList6.get(c).robot3 == r2) &&
+                        (adList6.get(c).robot1 == r3 || adList6.get(c).robot2 == r3 || adList6.get(c).robot3 == r3)) {
                     keepSearching = false;
                     // set all of the robot numbers
-                    r1 = adList6.get(c).robot1A6;
-                    r2 = adList6.get(c).robot2A6;
-                    r3 = adList6.get(c).robot3A6;
-                    strength = adList6.get(c).alliance6Strength;
-                    avgAutoFuel = adList6.get(c).avgAutoFuel6;
-                    avgTeleFuel = adList6.get(c).avgTeleFuel6;
-                    avgAutoGears = adList6.get(c).avgAutoGear6;
-                    avgTeleGears = adList6.get(c).avgTeleGear6;
-                    avgClimbs = adList6.get(c).avgTeleClimb6;
+                    r1 = adList6.get(c).robot1;
+                    r2 = adList6.get(c).robot2;
+                    r3 = adList6.get(c).robot3;
+                    strength = adList6.get(c).allianceLowStrength;
+                    avgAutoFuel = adList6.get(c).avgAutoFuel;
+                    avgTeleFuel = adList6.get(c).avgTeleFuel;
+                    avgAutoGears = adList6.get(c).avgAutoGear;
+                    avgTeleGears = adList6.get(c).avgTeleGear;
+                    avgClimbs = adList6.get(c).avgTeleClimb;
+                    alliance6.allianceHighStrength = adList6.get(c).allianceHighStrength;
+                    alliance6.allianceLowStrength = adList6.get(c).allianceLowStrength;
+                    alliance6.allianceRawStrength = adList6.get(c).allianceRawStrength;
+                    alliance6.avgAutoGear = adList6.get(c).avgAutoGear;
+                    alliance6.avgTeleGear = adList6.get(c).avgTeleGear;
+                    alliance6.avgAutoFuel = adList6.get(c).avgAutoFuel;
+                    alliance6.avgTeleFuel = adList6.get(c).avgTeleFuel;
+                    alliance6.avgTeleClimb = adList6.get(c).avgTeleClimb;
+                    alliance6.allianceNumber = 6;
 
                 }
                 c++;
@@ -2261,11 +3151,11 @@ public class Main extends Application {
     // Display Alliance 7 Stats
     public void getStrongestAlliance7() {
         // first sort alliances by strength
-        Collections.sort(adList7, new Comparator<Alliance7Data>() {
-            public int compare(Alliance7Data o1, Alliance7Data o2) {
-                if (o1.alliance7Strength == o2.alliance7Strength)
+        Collections.sort(adList7, new Comparator<AllianceData>() {
+            public int compare(AllianceData o1, AllianceData o2) {
+                if (o1.allianceLowStrength == o2.allianceLowStrength)
                     return 0;
-                return o1.alliance7Strength > o2.alliance7Strength ? -1 : 1;
+                return o1.allianceLowStrength > o2.allianceLowStrength ? -1 : 1;
             }
         });
 
@@ -2290,20 +3180,29 @@ public class Main extends Application {
             int c =0;
             boolean keepSearching = true;
             while (keepSearching == true) {
-                if ((adList7.get(c).robot1A7 == r1 || adList7.get(c).robot2A7 == r1 || adList7.get(c).robot3A7 == r1) &&
-                        (adList7.get(c).robot1A7 == r2 || adList7.get(c).robot2A7 == r2 || adList7.get(c).robot3A7 == r2) &&
-                        (adList7.get(c).robot1A7 == r3 || adList7.get(c).robot2A7 == r3 || adList7.get(c).robot3A7 == r3)) {
+                if ((adList7.get(c).robot1 == r1 || adList7.get(c).robot2 == r1 || adList7.get(c).robot3 == r1) &&
+                        (adList7.get(c).robot1 == r2 || adList7.get(c).robot2 == r2 || adList7.get(c).robot3 == r2) &&
+                        (adList7.get(c).robot1 == r3 || adList7.get(c).robot2 == r3 || adList7.get(c).robot3 == r3)) {
                     keepSearching = false;
                     // set all of the robot numbers
-                    r1 = adList7.get(c).robot1A7;
-                    r2 = adList7.get(c).robot2A7;
-                    r3 = adList7.get(c).robot3A7;
-                    strength = adList7.get(c).alliance7Strength;
-                    avgAutoFuel = adList7.get(c).avgAutoFuel7;
-                    avgTeleFuel = adList7.get(c).avgTeleFuel7;
-                    avgAutoGears = adList7.get(c).avgAutoGear7;
-                    avgTeleGears = adList7.get(c).avgTeleGear7;
-                    avgClimbs = adList7.get(c).avgTeleClimb7;
+                    r1 = adList7.get(c).robot1;
+                    r2 = adList7.get(c).robot2;
+                    r3 = adList7.get(c).robot3;
+                    strength = adList7.get(c).allianceLowStrength;
+                    avgAutoFuel = adList7.get(c).avgAutoFuel;
+                    avgTeleFuel = adList7.get(c).avgTeleFuel;
+                    avgAutoGears = adList7.get(c).avgAutoGear;
+                    avgTeleGears = adList7.get(c).avgTeleGear;
+                    avgClimbs = adList7.get(c).avgTeleClimb;
+                    alliance7.allianceHighStrength = adList7.get(c).allianceHighStrength;
+                    alliance7.allianceLowStrength = adList7.get(c).allianceLowStrength;
+                    alliance7.allianceRawStrength = adList7.get(c).allianceRawStrength;
+                    alliance7.avgAutoGear = adList7.get(c).avgAutoGear;
+                    alliance7.avgTeleGear = adList7.get(c).avgTeleGear;
+                    alliance7.avgAutoFuel = adList7.get(c).avgAutoFuel;
+                    alliance7.avgTeleFuel = adList7.get(c).avgTeleFuel;
+                    alliance7.avgTeleClimb = adList7.get(c).avgTeleClimb;
+                    alliance7.allianceNumber = 7;
 
                 }
                 c++;
@@ -2322,11 +3221,11 @@ public class Main extends Application {
     // Display Alliance 8 Stats
     public void getStrongestAlliance8() {
         // first sort alliances by strength
-        Collections.sort(adList8, new Comparator<Alliance8Data>() {
-            public int compare(Alliance8Data o1, Alliance8Data o2) {
-                if (o1.alliance8Strength == o2.alliance8Strength)
+        Collections.sort(adList8, new Comparator<AllianceData>() {
+            public int compare(AllianceData o1, AllianceData o2) {
+                if (o1.allianceLowStrength == o2.allianceLowStrength)
                     return 0;
-                return o1.alliance8Strength > o2.alliance8Strength ? -1 : 1;
+                return o1.allianceLowStrength > o2.allianceLowStrength ? -1 : 1;
             }
         });
 
@@ -2351,20 +3250,29 @@ public class Main extends Application {
             int c =0;
             boolean keepSearching = true;
             while (keepSearching == true) {
-                if ((adList8.get(c).robot1A8 == r1 || adList8.get(c).robot2A8 == r1 || adList8.get(c).robot3A8 == r1) &&
-                        (adList8.get(c).robot1A8 == r2 || adList8.get(c).robot2A8 == r2 || adList8.get(c).robot3A8 == r2) &&
-                        (adList8.get(c).robot1A8 == r3 || adList8.get(c).robot2A8 == r3 || adList8.get(c).robot3A8 == r3)) {
+                if ((adList8.get(c).robot1 == r1 || adList8.get(c).robot2 == r1 || adList8.get(c).robot3 == r1) &&
+                        (adList8.get(c).robot1 == r2 || adList8.get(c).robot2 == r2 || adList8.get(c).robot3 == r2) &&
+                        (adList8.get(c).robot1 == r3 || adList8.get(c).robot2 == r3 || adList8.get(c).robot3 == r3)) {
                     keepSearching = false;
                     // set all of the robot numbers
-                    r1 = adList8.get(c).robot1A8;
-                    r2 = adList8.get(c).robot2A8;
-                    r3 = adList8.get(c).robot3A8;
-                    strength = adList8.get(c).alliance8Strength;
-                    avgAutoFuel = adList8.get(c).avgAutoFuel8;
-                    avgTeleFuel = adList8.get(c).avgTeleFuel8;
-                    avgAutoGears = adList8.get(c).avgAutoGear8;
-                    avgTeleGears = adList8.get(c).avgTeleGear8;
-                    avgClimbs = adList8.get(c).avgTeleClimb8;
+                    r1 = adList8.get(c).robot1;
+                    r2 = adList8.get(c).robot2;
+                    r3 = adList8.get(c).robot3;
+                    strength = adList8.get(c).allianceLowStrength;
+                    avgAutoFuel = adList8.get(c).avgAutoFuel;
+                    avgTeleFuel = adList8.get(c).avgTeleFuel;
+                    avgAutoGears = adList8.get(c).avgAutoGear;
+                    avgTeleGears = adList8.get(c).avgTeleGear;
+                    avgClimbs = adList8.get(c).avgTeleClimb;
+                    alliance8.allianceHighStrength = adList8.get(c).allianceHighStrength;
+                    alliance8.allianceLowStrength = adList8.get(c).allianceLowStrength;
+                    alliance8.allianceRawStrength = adList8.get(c).allianceRawStrength;
+                    alliance8.avgAutoGear = adList8.get(c).avgAutoGear;
+                    alliance8.avgTeleGear = adList8.get(c).avgTeleGear;
+                    alliance8.avgAutoFuel = adList8.get(c).avgAutoFuel;
+                    alliance8.avgTeleFuel = adList8.get(c).avgTeleFuel;
+                    alliance8.avgTeleClimb = adList8.get(c).avgTeleClimb;
+                    alliance8.allianceNumber = 8;
 
                 }
                 c++;
@@ -2404,6 +3312,72 @@ public class Main extends Application {
             currNum++;
         }
     }
+    public void resetData(int allianceNumber) {
+        if (allianceNumber == 1) {
+            avgAutoGearsText1.setText("");
+            avgTeleGearsText1.setText("");
+            avgAutoFuelText1.setText("");
+            avgTeleFuelText1.setText("");
+            avgClimbsText1.setText("");
+            predictedScore1.setText("");
+        }
+        if (allianceNumber == 2) {
+            avgAutoGearsText2.setText("");
+            avgTeleGearsText2.setText("");
+            avgAutoFuelText2.setText("");
+            avgTeleFuelText2.setText("");
+            avgClimbsText2.setText("");
+            predictedScore2.setText("");
+        }
+        if (allianceNumber == 3) {
+            avgAutoGearsText3.setText("");
+            avgTeleGearsText3.setText("");
+            avgAutoFuelText3.setText("");
+            avgTeleFuelText3.setText("");
+            avgClimbsText3.setText("");
+            predictedScore3.setText("");
+        }
+        if (allianceNumber == 4) {
+            avgAutoGearsText4.setText("");
+            avgTeleGearsText4.setText("");
+            avgAutoFuelText4.setText("");
+            avgTeleFuelText4.setText("");
+            avgClimbsText4.setText("");
+            predictedScore4.setText("");
+        }
+        if (allianceNumber == 5) {
+            avgAutoGearsText5.setText("");
+            avgTeleGearsText5.setText("");
+            avgAutoFuelText5.setText("");
+            avgTeleFuelText5.setText("");
+            avgClimbsText5.setText("");
+            predictedScore5.setText("");
+        }
+        if (allianceNumber == 6) {
+            avgAutoGearsText6.setText("");
+            avgTeleGearsText6.setText("");
+            avgAutoFuelText6.setText("");
+            avgTeleFuelText6.setText("");
+            avgClimbsText6.setText("");
+            predictedScore6.setText("");
+        }
+        if (allianceNumber == 7) {
+            avgAutoGearsText7.setText("");
+            avgTeleGearsText7.setText("");
+            avgAutoFuelText7.setText("");
+            avgTeleFuelText7.setText("");
+            avgClimbsText7.setText("");
+            predictedScore7.setText("");
+        }
+        if (allianceNumber == 8) {
+            avgAutoGearsText8.setText("");
+            avgTeleGearsText8.setText("");
+            avgAutoFuelText8.setText("");
+            avgTeleFuelText8.setText("");
+            avgClimbsText8.setText("");
+            predictedScore8.setText("");
+        }
+    }
     public void placeRobots() {
         int currNum = 0;
         currY = robotTextY + robotYOffset;
@@ -2428,7 +3402,7 @@ public class Main extends Application {
     }
     public void placeAlliance1() {
         int currNum = 0;
-        currY = alliance1TextY + alliance1YOffset;
+        currY = alliance1TextY + alliance1YOffset - 5;
         //System.out.println("size of picked team list = " + pickedTeamTextList.size());
         /* Collections.sort(alliance1TextList, new Comparator<Text>() {
             public int compare(Text o1, Text o2) {
@@ -2438,7 +3412,7 @@ public class Main extends Application {
             }
         }); */
         for (Text t : alliance1TextList) {
-            currX = currNum*incrX + alliance1TextX;
+            currX = currNum*incrX + alliance1TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -2446,9 +3420,9 @@ public class Main extends Application {
     }
     public void placeAlliance2() {
         int currNum = 0;
-        currY = alliance2TextY + alliance2YOffset;
+        currY = alliance2TextY + alliance2YOffset - 5;
         for (Text t : alliance2TextList) {
-            currX = currNum*incrX + alliance2TextX;
+            currX = currNum*incrX + alliance2TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -2456,9 +3430,9 @@ public class Main extends Application {
     }
     public void placeAlliance3() {
         int currNum = 0;
-        currY = alliance3TextY + alliance3YOffset;
+        currY = alliance3TextY + alliance3YOffset - 5;
         for (Text t : alliance3TextList) {
-            currX = currNum*incrX + alliance3TextX;
+            currX = currNum*incrX + alliance3TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -2466,9 +3440,9 @@ public class Main extends Application {
     }
     public void placeAlliance4() {
         int currNum = 0;
-        currY = alliance4TextY + alliance4YOffset;
+        currY = alliance4TextY + alliance4YOffset - 5;
         for (Text t : alliance4TextList) {
-            currX = (currNum % alliance4Columns)*incrX + alliance4TextX;
+            currX = (currNum % alliance4Columns)*incrX + alliance4TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -2476,10 +3450,10 @@ public class Main extends Application {
     }
     public void placeAlliance5() {
         int currNum = 0;
-        currY = alliance5TextY + alliance5YOffset;
+        currY = alliance5TextY + alliance5YOffset - 5;
         //System.out.println("size of picked team list = " + pickedTeamTextList.size());
         for (Text t : alliance5TextList) {
-            currX = (currNum % alliance5Columns)*incrX + alliance5TextX;
+            currX = (currNum % alliance5Columns)*incrX + alliance5TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -2487,10 +3461,10 @@ public class Main extends Application {
     }
     public void placeAlliance6() {
         int currNum = 0;
-        currY = alliance6TextY + alliance6YOffset;
+        currY = alliance6TextY + alliance6YOffset - 5;
         //System.out.println("size of picked team list = " + pickedTeamTextList.size());
         for (Text t : alliance6TextList) {
-            currX = (currNum % alliance6Columns)*incrX + alliance6TextX;
+            currX = (currNum % alliance6Columns)*incrX + alliance6TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -2498,10 +3472,10 @@ public class Main extends Application {
     }
     public void placeAlliance7() {
         int currNum = 0;
-        currY = alliance7TextY + alliance7YOffset;
+        currY = alliance7TextY + alliance7YOffset - 5;
         //System.out.println("size of picked team list = " + pickedTeamTextList.size());
         for (Text t : alliance7TextList) {
-            currX = (currNum % alliance7Columns)*incrX + alliance7TextX;
+            currX = (currNum % alliance7Columns)*incrX + alliance7TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -2509,10 +3483,10 @@ public class Main extends Application {
     }
     public void placeAlliance8() {
         int currNum = 0;
-        currY = alliance8TextY + alliance8YOffset;
+        currY = alliance8TextY + alliance8YOffset - 5;
         //System.out.println("size of picked team list = " + pickedTeamTextList.size());
         for (Text t : alliance8TextList) {
-            currX = (currNum % alliance8Columns)*incrX + alliance8TextX;
+            currX = (currNum % alliance8Columns)*incrX + alliance8TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -2955,22 +3929,22 @@ public class Main extends Application {
             for (Integer t2 : teamList) {
                 for (Integer t3 : teamList) {
                     if (t1 != t3 && t3 != t2 && t1 != t2) {
-                        Alliance1Data ad = new Alliance1Data();
-                        ad.robot1A1 = t1;
-                        ad.robot2A1 = t2;
-                        ad.robot3A1 = t3;
+                        AllianceData ad = new AllianceData();
+                        ad.robot1 = t1;
+                        ad.robot2 = t2;
+                        ad.robot3 = t3;
 
                         // create the combined averages
                         // in auto low shots are worth 1/3 point, high shots = 1pt
-                        ad.avgAutoFuel1 = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
+                        ad.avgAutoFuel = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) +
                                 (getRobot(t1).autoHighShots.avg + getRobot(t2).autoHighShots.avg + getRobot(t3).autoHighShots.avg);
-                        ad.avgTeleFuel1 = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
-                                (getRobot(t1).highShots.avg + getRobot(t2).highShots.avg + getRobot(t3).highShots.avg) / 3;
-                        ad.avgAutoGear1 = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
-                        ad.avgTeleGear1 = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
-                        ad.avgTeleClimb1 = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
+                        ad.avgTeleFuel = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) +
+                                (getRobot(t1).highShots.avg + getRobot(t2).highShots.avg + getRobot(t3).highShots.avg);
+                        ad.avgAutoGear = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
+                        ad.avgTeleGear = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
+                        ad.avgTeleClimb = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
 
-                        ad.calcStrength1();
+                        ad.calcStrength();
                         adList1.add(ad);
                     }
                 }
@@ -2981,22 +3955,22 @@ public class Main extends Application {
             for (Integer t2 : teamList) {
                 for (Integer t3 : teamList) {
                     if (t1 != t3 && t3 != t2 && t1 != t2) {
-                        Alliance2Data ad = new Alliance2Data();
-                        ad.robot1A2 = t1;
-                        ad.robot2A2 = t2;
-                        ad.robot3A2 = t3;
+                        AllianceData ad = new AllianceData();
+                        ad.robot1 = t1;
+                        ad.robot2 = t2;
+                        ad.robot3 = t3;
 
                         // create the combined averages
                         // in auto low shots are worth 1/3 point, high shots = 1pt
-                        ad.avgAutoFuel2 = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
+                        ad.avgAutoFuel = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
                                 (getRobot(t1).autoHighShots.avg + getRobot(t2).autoHighShots.avg + getRobot(t3).autoHighShots.avg);
-                        ad.avgTeleFuel2 = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
+                        ad.avgTeleFuel = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
                                 (getRobot(t1).highShots.avg + getRobot(t2).highShots.avg + getRobot(t3).highShots.avg) / 3;
-                        ad.avgAutoGear2 = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
-                        ad.avgTeleGear2 = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
-                        ad.avgTeleClimb2 = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
+                        ad.avgAutoGear = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
+                        ad.avgTeleGear = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
+                        ad.avgTeleClimb = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
 
-                        ad.calcStrength2();
+                        ad.calcStrength();
                         adList2.add(ad);
                     }
                 }
@@ -3006,22 +3980,22 @@ public class Main extends Application {
             for (Integer t2 : teamList) {
                 for (Integer t3 : teamList) {
                     if (t1 != t3 && t3 != t2 && t1 != t2) {
-                        Alliance3Data ad = new Alliance3Data();
-                        ad.robot1A3 = t1;
-                        ad.robot2A3 = t2;
-                        ad.robot3A3 = t3;
+                        AllianceData ad = new AllianceData();
+                        ad.robot1 = t1;
+                        ad.robot2 = t2;
+                        ad.robot3 = t3;
 
                         // create the combined averages
                         // in auto low shots are worth 1/3 point, high shots = 1pt
-                        ad.avgAutoFuel3 = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
+                        ad.avgAutoFuel = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
                                 (getRobot(t1).autoHighShots.avg + getRobot(t2).autoHighShots.avg + getRobot(t3).autoHighShots.avg);
-                        ad.avgTeleFuel3 = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
+                        ad.avgTeleFuel = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
                                 (getRobot(t1).highShots.avg + getRobot(t2).highShots.avg + getRobot(t3).highShots.avg) / 3;
-                        ad.avgAutoGear3 = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
-                        ad.avgTeleGear3 = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
-                        ad.avgTeleClimb3 = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
+                        ad.avgAutoGear = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
+                        ad.avgTeleGear = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
+                        ad.avgTeleClimb = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
 
-                        ad.calcStrength3();
+                        ad.calcStrength();
                         adList3.add(ad);
                     }
                 }
@@ -3031,22 +4005,22 @@ public class Main extends Application {
             for (Integer t2 : teamList) {
                 for (Integer t3 : teamList) {
                     if (t1 != t3 && t3 != t2 && t1 != t2) {
-                        Alliance4Data ad = new Alliance4Data();
-                        ad.robot1A4 = t1;
-                        ad.robot2A4 = t2;
-                        ad.robot3A4 = t3;
+                        AllianceData ad = new AllianceData();
+                        ad.robot1 = t1;
+                        ad.robot2 = t2;
+                        ad.robot3 = t3;
 
                         // create the combined averages
                         // in auto low shots are worth 1/3 point, high shots = 1pt
-                        ad.avgAutoFuel4 = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
+                        ad.avgAutoFuel = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
                                 (getRobot(t1).autoHighShots.avg + getRobot(t2).autoHighShots.avg + getRobot(t3).autoHighShots.avg);
-                        ad.avgTeleFuel4 = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
+                        ad.avgTeleFuel = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
                                 (getRobot(t1).highShots.avg + getRobot(t2).highShots.avg + getRobot(t3).highShots.avg) / 3;
-                        ad.avgAutoGear4 = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
-                        ad.avgTeleGear4 = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
-                        ad.avgTeleClimb4 = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
+                        ad.avgAutoGear = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
+                        ad.avgTeleGear = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
+                        ad.avgTeleClimb = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
 
-                        ad.calcStrength4();
+                        ad.calcStrength();
                         adList4.add(ad);
                     }
                 }
@@ -3056,22 +4030,22 @@ public class Main extends Application {
             for (Integer t2 : teamList) {
                 for (Integer t3 : teamList) {
                     if (t1 != t3 && t3 != t2 && t1 != t2) {
-                        Alliance5Data ad = new Alliance5Data();
-                        ad.robot1A5 = t1;
-                        ad.robot2A5 = t2;
-                        ad.robot3A5 = t3;
+                        AllianceData ad = new AllianceData();
+                        ad.robot1 = t1;
+                        ad.robot2 = t2;
+                        ad.robot3 = t3;
 
                         // create the combined averages
                         // in auto low shots are worth 1/3 point, high shots = 1pt
-                        ad.avgAutoFuel5 = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
+                        ad.avgAutoFuel = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
                                 (getRobot(t1).autoHighShots.avg + getRobot(t2).autoHighShots.avg + getRobot(t3).autoHighShots.avg);
-                        ad.avgTeleFuel5 = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
+                        ad.avgTeleFuel = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
                                 (getRobot(t1).highShots.avg + getRobot(t2).highShots.avg + getRobot(t3).highShots.avg) / 3;
-                        ad.avgAutoGear5 = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
-                        ad.avgTeleGear5 = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
-                        ad.avgTeleClimb5 = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
+                        ad.avgAutoGear = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
+                        ad.avgTeleGear = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
+                        ad.avgTeleClimb = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
 
-                        ad.calcStrength5();
+                        ad.calcStrength();
                         adList5.add(ad);
                     }
                 }
@@ -3081,22 +4055,22 @@ public class Main extends Application {
             for (Integer t2 : teamList) {
                 for (Integer t3 : teamList) {
                     if (t1 != t3 && t3 != t2 && t1 != t2) {
-                        Alliance6Data ad = new Alliance6Data();
-                        ad.robot1A6 = t1;
-                        ad.robot2A6 = t2;
-                        ad.robot3A6 = t3;
+                        AllianceData ad = new AllianceData();
+                        ad.robot1 = t1;
+                        ad.robot2 = t2;
+                        ad.robot3 = t3;
 
                         // create the combined averages
                         // in auto low shots are worth 1/3 point, high shots = 1pt
-                        ad.avgAutoFuel6 = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
+                        ad.avgAutoFuel = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
                                 (getRobot(t1).autoHighShots.avg + getRobot(t2).autoHighShots.avg + getRobot(t3).autoHighShots.avg);
-                        ad.avgTeleFuel6 = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
+                        ad.avgTeleFuel = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
                                 (getRobot(t1).highShots.avg + getRobot(t2).highShots.avg + getRobot(t3).highShots.avg) / 3;
-                        ad.avgAutoGear6 = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
-                        ad.avgTeleGear6 = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
-                        ad.avgTeleClimb6 = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
+                        ad.avgAutoGear = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
+                        ad.avgTeleGear = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
+                        ad.avgTeleClimb = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
 
-                        ad.calcStrength6();
+                        ad.calcStrength();
                         adList6.add(ad);
                     }
                 }
@@ -3106,22 +4080,22 @@ public class Main extends Application {
             for (Integer t2 : teamList) {
                 for (Integer t3 : teamList) {
                     if (t1 != t3 && t3 != t2 && t1 != t2) {
-                        Alliance7Data ad = new Alliance7Data();
-                        ad.robot1A7 = t1;
-                        ad.robot2A7 = t2;
-                        ad.robot3A7 = t3;
+                        AllianceData ad = new AllianceData();
+                        ad.robot1 = t1;
+                        ad.robot2 = t2;
+                        ad.robot3 = t3;
 
                         // create the combined averages
                         // in auto low shots are worth 1/3 point, high shots = 1pt
-                        ad.avgAutoFuel7 = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
+                        ad.avgAutoFuel = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
                                 (getRobot(t1).autoHighShots.avg + getRobot(t2).autoHighShots.avg + getRobot(t3).autoHighShots.avg);
-                        ad.avgTeleFuel7 = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
+                        ad.avgTeleFuel = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
                                 (getRobot(t1).highShots.avg + getRobot(t2).highShots.avg + getRobot(t3).highShots.avg) / 3;
-                        ad.avgAutoGear7 = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
-                        ad.avgTeleGear7 = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
-                        ad.avgTeleClimb7 = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
+                        ad.avgAutoGear = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
+                        ad.avgTeleGear = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
+                        ad.avgTeleClimb = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
 
-                        ad.calcStrength7();
+                        ad.calcStrength();
                         adList7.add(ad);
                     }
                 }
@@ -3131,22 +4105,22 @@ public class Main extends Application {
             for (Integer t2 : teamList) {
                 for (Integer t3 : teamList) {
                     if (t1 != t3 && t3 != t2 && t1 != t2) {
-                        Alliance8Data ad = new Alliance8Data();
-                        ad.robot1A8 = t1;
-                        ad.robot2A8 = t2;
-                        ad.robot3A8 = t3;
+                        AllianceData ad = new AllianceData();
+                        ad.robot1 = t1;
+                        ad.robot2 = t2;
+                        ad.robot3 = t3;
 
                         // create the combined averages
                         // in auto low shots are worth 1/3 point, high shots = 1pt
-                        ad.avgAutoFuel8 = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
+                        ad.avgAutoFuel = (getRobot(t1).autoLowShots.avg + getRobot(t2).autoLowShots.avg + getRobot(t3).autoLowShots.avg) / 3 +
                                 (getRobot(t1).autoHighShots.avg + getRobot(t2).autoHighShots.avg + getRobot(t3).autoHighShots.avg);
-                        ad.avgTeleFuel8 = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
+                        ad.avgTeleFuel = (getRobot(t1).lowShots.avg + getRobot(t2).lowShots.avg + getRobot(t3).lowShots.avg) / 9 +
                                 (getRobot(t1).highShots.avg + getRobot(t2).highShots.avg + getRobot(t3).highShots.avg) / 3;
-                        ad.avgAutoGear8 = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
-                        ad.avgTeleGear8 = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
-                        ad.avgTeleClimb8 = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
+                        ad.avgAutoGear = getRobot(t1).autoGears.avg + getRobot(t2).autoGears.avg + getRobot(t3).autoGears.avg;
+                        ad.avgTeleGear = getRobot(t1).teleGears.avg + getRobot(t2).teleGears.avg + getRobot(t3).teleGears.avg;
+                        ad.avgTeleClimb = getRobot(t1).climb.avg + getRobot(t2).climb.avg + getRobot(t3).climb.avg;
 
-                        ad.calcStrength8();
+                        ad.calcStrength();
                         adList8.add(ad);
                     }
                 }

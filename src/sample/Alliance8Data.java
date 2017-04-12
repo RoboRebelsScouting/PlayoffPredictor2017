@@ -1,5 +1,7 @@
 package sample;
 
+import static java.lang.Math.round;
+
 /**
  * Created by 1153 on 4/2/2017.
  */
@@ -64,7 +66,7 @@ public class Alliance8Data {
         if (avgAutoFuel8 + avgTeleFuel8 >= 40) {
             strength += 20;
         }
-        int climbPoints8 = (int)(avgTeleClimb8) * 50;
+        int climbPoints8 = (int) (round(avgTeleClimb8) * 50);
         strength += climbPoints8;
 
         alliance8Strength = strength;

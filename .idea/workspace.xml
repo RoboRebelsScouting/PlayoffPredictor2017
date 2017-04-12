@@ -6,7 +6,74 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Alliance1Data.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sample/Alliance1Data.java" afterPath="$PROJECT_DIR$/src/sample/AllianceData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/playoffPredictor/playoffPredictor.jar" afterPath="$PROJECT_DIR$/out/artifacts/playoffPredictor/playoffPredictor.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Alliance8Data.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Alliance8Data.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$1.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$10.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$11.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$12.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$13.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$14.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$15.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$16.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$17.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$18.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$19.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$2.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$20.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$20.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$21.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$22.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$22.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$23.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$23.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$24.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$24.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$25.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$25.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$26.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$26.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$27.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$27.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$28.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$28.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$29.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$29.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$3.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$30.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$30.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$31.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$31.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$32.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$32.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$33.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$33.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$34.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$34.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$35.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$35.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$36.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$36.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$37.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$37.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$38.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$38.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$39.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$39.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$4.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$40.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$40.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$41.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$41.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$42.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$42.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$43.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$43.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$44.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$44.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$45.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$45.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$46.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$46.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$47.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$47.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$48.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$48.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$49.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$49.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$5.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$50.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$50.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$51.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$51.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$52.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$52.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$53.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$53.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$54.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$54.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$55.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$55.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$56.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$56.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$57.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$57.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$6.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$7.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$8.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$9.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/playoffPredictor/playoffPredictor.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/playoffPredictor/playoffPredictor.jnlp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Alliance8Data.java" afterPath="$PROJECT_DIR$/src/sample/Alliance8Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/sample/Main.java" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -68,8 +135,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="603" column="49" selection-start-line="603" selection-start-column="49" selection-end-line="603" selection-end-column="49" />
+            <state relative-caret-position="289">
+              <caret line="1708" column="36" selection-start-line="1708" selection-start-column="36" selection-end-line="1708" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#haveRobot#0;class#Main#0" expanded="false" />
@@ -79,81 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Alliance8Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Alliance8Data.java">
+      <file leaf-file-name="AllianceData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/AllianceData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alliance7Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Alliance7Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alliance6Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Alliance6Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alliance5Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Alliance5Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alliance4Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Alliance4Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alliance3Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Alliance3Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alliance2Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Alliance2Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alliance1Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Alliance1Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+            <state relative-caret-position="17">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -162,8 +159,8 @@
       <file leaf-file-name="RobotData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/RobotData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="153">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,6 +182,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -196,24 +196,25 @@
         <option value="$PROJECT_DIR$/src/sample/DataGroup.java" />
         <option value="$PROJECT_DIR$/src/sample/AllianceTextData.java" />
         <option value="$PROJECT_DIR$/src/sample/RobotData.java" />
-        <option value="$PROJECT_DIR$/src/sample/AllianceData.java" />
         <option value="$PROJECT_DIR$/src/sample/Alliance1Data.java" />
-        <option value="$PROJECT_DIR$/src/sample/Alliance8Data.java" />
         <option value="$PROJECT_DIR$/src/sample/Alliance7Data.java" />
         <option value="$PROJECT_DIR$/src/sample/Alliance6Data.java" />
         <option value="$PROJECT_DIR$/src/sample/Alliance5Data.java" />
         <option value="$PROJECT_DIR$/src/sample/Alliance4Data.java" />
         <option value="$PROJECT_DIR$/src/sample/Alliance3Data.java" />
         <option value="$PROJECT_DIR$/src/sample/Alliance2Data.java" />
+        <option value="$PROJECT_DIR$/src/sample/Alliance8Data.java" />
+        <option value="$PROJECT_DIR$/src/sample/AllianceData.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="744" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1358" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -553,17 +554,17 @@
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="1" y="1" width="1358" height="726" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3480315" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34683955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -572,7 +573,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984252" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39708266" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -601,7 +602,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -622,11 +623,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/AllianceData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/RobotData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#haveRobot#0;class#Main#0" expanded="false" />
+            <element signature="method#getRobot#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Alliance8Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
           <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,11 +699,89 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/AllianceData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Alliance1Data.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/RobotData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#haveRobot#0;class#Main#0" expanded="false" />
+            <element signature="method#getRobot#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Alliance8Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Alliance7Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Alliance6Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Alliance5Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Alliance4Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Alliance3Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Alliance2Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/AllianceData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
@@ -757,21 +860,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/RobotData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Alliance6Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,15 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Alliance2Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="43" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,30 +892,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Alliance8Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+        <state relative-caret-position="437">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Alliance2Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/RobotData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="1108" column="53" selection-start-line="1108" selection-start-column="53" selection-end-line="1108" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Alliance1Data.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/AllianceData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+        <state relative-caret-position="17">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="603" column="49" selection-start-line="603" selection-start-column="49" selection-end-line="603" selection-end-column="49" />
+        <state relative-caret-position="289">
+          <caret line="1708" column="36" selection-start-line="1708" selection-start-column="36" selection-end-line="1708" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#haveRobot#0;class#Main#0" expanded="false" />

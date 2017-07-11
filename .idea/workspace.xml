@@ -7,71 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Alliance1Data.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sample/Alliance1Data.java" afterPath="$PROJECT_DIR$/src/sample/AllianceData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/playoffPredictor/playoffPredictor.jar" afterPath="$PROJECT_DIR$/out/artifacts/playoffPredictor/playoffPredictor.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Alliance8Data.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Alliance8Data.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$1.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$10.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$11.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$12.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$13.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$14.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$15.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$16.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$17.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$18.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$19.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$2.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$20.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$20.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$21.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$21.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$22.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$22.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$23.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$23.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$24.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$24.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$25.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$25.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$26.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$26.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$27.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$27.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$28.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$28.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$29.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$29.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$3.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$30.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$30.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$31.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$31.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$32.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$32.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$33.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$33.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$34.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$34.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$35.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$35.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$36.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$36.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$37.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$37.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$38.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$38.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$39.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$39.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$4.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$40.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$40.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$41.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$41.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$42.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$42.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$43.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$43.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$44.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$44.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$45.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$45.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$46.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$46.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$47.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$47.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$48.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$48.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$49.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$49.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$5.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$50.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$50.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$51.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$51.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$52.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$52.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$53.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$53.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$54.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$54.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$55.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$55.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$56.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$56.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$57.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$57.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$6.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$7.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$8.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$9.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main.class" afterPath="$PROJECT_DIR$/out/production/playoffPredictor/sample/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/playoffPredictor/playoffPredictor.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/playoffPredictor/playoffPredictor.jnlp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Alliance8Data.java" afterPath="$PROJECT_DIR$/src/sample/Alliance8Data.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/sample/Main.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -135,8 +70,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="1708" column="36" selection-start-line="1708" selection-start-column="36" selection-end-line="1708" selection-end-column="36" />
+            <state relative-caret-position="526">
+              <caret line="1542" column="25" selection-start-line="1542" selection-start-column="25" selection-end-line="1542" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#haveRobot#0;class#Main#0" expanded="false" />
@@ -937,8 +872,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="1708" column="36" selection-start-line="1708" selection-start-column="36" selection-end-line="1708" selection-end-column="36" />
+        <state relative-caret-position="526">
+          <caret line="1542" column="25" selection-start-line="1542" selection-start-column="25" selection-end-line="1542" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#haveRobot#0;class#Main#0" expanded="false" />

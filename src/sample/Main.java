@@ -48,10 +48,6 @@ import static javafx.scene.paint.Color.RED;
 
 public class Main extends Application {
 
-    //public static String userDir = System.getProperty("user.home");
-    //public static String dataSheetDir = "C:\\Users\\1153\\Documents\\Datasheets";
-    //public static String dataSheetDir = userDir + "\\Documents\\Datasheets";
-    public Writer writer = null;
     public ArrayList<RobotData> robotList = new ArrayList<RobotData>();
     public List<AllianceData> adList1 = new ArrayList<AllianceData>();
     public List<AllianceData> adList2 = new ArrayList<AllianceData>();
@@ -61,7 +57,6 @@ public class Main extends Application {
     public List<AllianceData> adList6 = new ArrayList<AllianceData>();
     public List<AllianceData> adList7 = new ArrayList<AllianceData>();
     public List<AllianceData> adList8 = new ArrayList<AllianceData>();
-    public List<AllianceTextData> actualList = new ArrayList<AllianceTextData>();
     public List<Integer> teamList = new ArrayList<Integer>();
 
     public AllianceData alliance1 = new AllianceData();
@@ -290,43 +285,30 @@ public class Main extends Application {
     public int startX = 5;
     public int startY = 38;
     public int incrX = 30;
+    public int allianceIncrX = 55;
     public int incrY = 25;
     public int currX = startX;
     public int currY = startY;
     public int columns = 4;
     public int robotColumns = 4;
     public int robotYOffset = 30;
-    public int robotYIncr = 25;
-    public int alliance1Columns = 3;
-    public int alliance1YIncr = 25;
     public int alliance1YOffset = 30;
-    public int alliance2Columns = 3;
-    public int alliance2YIncr = 25;
     public int alliance2YOffset = 30;
-    public int alliance3Columns = 3;
-    public int alliance3YIncr = 25;
     public int alliance3YOffset = 30;
     public int alliance4Columns = 3;
-    public int alliance4YIncr = 25;
     public int alliance4YOffset = 30;
     public int alliance5Columns = 3;
-    public int alliance5YIncr = 25;
     public int alliance5YOffset = 30;
     public int alliance6Columns = 3;
-    public int alliance6YIncr = 25;
     public int alliance6YOffset = 30;
     public int alliance7Columns = 3;
-    public int alliance7YIncr = 25;
     public int alliance7YOffset = 30;
     public int alliance8Columns = 3;
-    public int alliance8YIncr = 25;
     public int alliance8YOffset = 30;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         getDataFromDB();
-        //System.out.println("start");
-        //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Group root = new Group();
         primaryStage.setTitle("Playoff Predictor");
         primaryStage.setScene(new Scene(root, 900, 650));
@@ -341,6 +323,21 @@ public class Main extends Application {
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
+                        if ((alliance1TextList.size() <= 3) ||
+                                (alliance2TextList.size() <= 3) ||
+                                (alliance3TextList.size() <= 3) ||
+                                (alliance4TextList.size() <= 3) ||
+                                (alliance5TextList.size() <= 3) ||
+                                (alliance6TextList.size() <= 3) ||
+                                (alliance7TextList.size() <= 3) ||
+                                (alliance8TextList.size() <= 3)) {
+                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                            alert.setTitle("Enter More Robots");
+                            alert.setHeaderText("24 Robots must be entered into the boxes to open this page");
+                            alert.showAndWait();
+                            exit();
+                        }
+
                         final Stage dialog = new Stage();
                         dialog.initModality(Modality.APPLICATION_MODAL);
                         dialog.initOwner(primaryStage);
@@ -588,6 +585,20 @@ public class Main extends Application {
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
+                        if ((alliance1TextList.size() <= 3) ||
+                                (alliance2TextList.size() <= 3) ||
+                                (alliance3TextList.size() <= 3) ||
+                                (alliance4TextList.size() <= 3) ||
+                                (alliance5TextList.size() <= 3) ||
+                                (alliance6TextList.size() <= 3) ||
+                                (alliance7TextList.size() <= 3) ||
+                                (alliance8TextList.size() <= 3)) {
+                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                            alert.setTitle("Enter More Robots");
+                            alert.setHeaderText("24 Robots must be entered into the boxes to open this page");
+                            alert.showAndWait();
+                            exit();
+                        }
                         final Stage dialog = new Stage();
                         dialog.initModality(Modality.APPLICATION_MODAL);
                         dialog.initOwner(primaryStage);
@@ -787,6 +798,21 @@ public class Main extends Application {
                 new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
+                        if ((alliance1TextList.size() <= 3) ||
+                                (alliance2TextList.size() <= 3) ||
+                                (alliance3TextList.size() <= 3) ||
+                                (alliance4TextList.size() <= 3) ||
+                                (alliance5TextList.size() <= 3) ||
+                                (alliance6TextList.size() <= 3) ||
+                                (alliance7TextList.size() <= 3) ||
+                                (alliance8TextList.size() <= 3)) {
+                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                            alert.setTitle("Enter More Robots");
+                            alert.setHeaderText("24 Robots must be entered into the boxes to open this page");
+                            alert.showAndWait();
+                            exit();
+                        }
+
                         final Stage dialog = new Stage();
                         dialog.initModality(Modality.APPLICATION_MODAL);
                         dialog.initOwner(primaryStage);
@@ -1702,21 +1728,6 @@ public class Main extends Application {
         if (adList1.size() == 0) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Database is empty");
-            alert.setHeaderText("Check the SQL database");
-            alert.showAndWait();
-            exit();
-        }
-        //put in onclicks of buttons
-        if ((alliance1TextList.size() <= 3) &&
-            (alliance2TextList.size() <= 3) &&
-            (alliance3TextList.size() <= 3) &&
-            (alliance4TextList.size() <= 3) &&
-            (alliance5TextList.size() <= 3) &&
-            (alliance6TextList.size() <= 3) &&
-            (alliance7TextList.size() <= 3) &&
-            (alliance8TextList.size() <= 3)) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("24 Robots must be entered into the boxes to open this ");
             alert.setHeaderText("Check the SQL database");
             alert.showAndWait();
             exit();
@@ -3412,7 +3423,7 @@ public class Main extends Application {
             }
         }); */
         for (Text t : alliance1TextList) {
-            currX = currNum*incrX + alliance1TextX + 18;
+            currX = currNum*allianceIncrX + alliance1TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -3422,7 +3433,7 @@ public class Main extends Application {
         int currNum = 0;
         currY = alliance2TextY + alliance2YOffset - 5;
         for (Text t : alliance2TextList) {
-            currX = currNum*incrX + alliance2TextX + 18;
+            currX = currNum*allianceIncrX + alliance2TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -3432,7 +3443,7 @@ public class Main extends Application {
         int currNum = 0;
         currY = alliance3TextY + alliance3YOffset - 5;
         for (Text t : alliance3TextList) {
-            currX = currNum*incrX + alliance3TextX + 18;
+            currX = currNum*allianceIncrX + alliance3TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -3442,7 +3453,7 @@ public class Main extends Application {
         int currNum = 0;
         currY = alliance4TextY + alliance4YOffset - 5;
         for (Text t : alliance4TextList) {
-            currX = (currNum % alliance4Columns)*incrX + alliance4TextX + 18;
+            currX = (currNum % alliance4Columns)*allianceIncrX + alliance4TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -3453,7 +3464,7 @@ public class Main extends Application {
         currY = alliance5TextY + alliance5YOffset - 5;
         //System.out.println("size of picked team list = " + pickedTeamTextList.size());
         for (Text t : alliance5TextList) {
-            currX = (currNum % alliance5Columns)*incrX + alliance5TextX + 18;
+            currX = (currNum % alliance5Columns)*allianceIncrX + alliance5TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -3464,7 +3475,7 @@ public class Main extends Application {
         currY = alliance6TextY + alliance6YOffset - 5;
         //System.out.println("size of picked team list = " + pickedTeamTextList.size());
         for (Text t : alliance6TextList) {
-            currX = (currNum % alliance6Columns)*incrX + alliance6TextX + 18;
+            currX = (currNum % alliance6Columns)*allianceIncrX + alliance6TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -3475,7 +3486,7 @@ public class Main extends Application {
         currY = alliance7TextY + alliance7YOffset - 5;
         //System.out.println("size of picked team list = " + pickedTeamTextList.size());
         for (Text t : alliance7TextList) {
-            currX = (currNum % alliance7Columns)*incrX + alliance7TextX + 18;
+            currX = (currNum % alliance7Columns)*allianceIncrX + alliance7TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;
@@ -3486,7 +3497,7 @@ public class Main extends Application {
         currY = alliance8TextY + alliance8YOffset - 5;
         //System.out.println("size of picked team list = " + pickedTeamTextList.size());
         for (Text t : alliance8TextList) {
-            currX = (currNum % alliance8Columns)*incrX + alliance8TextX + 18;
+            currX = (currNum % alliance8Columns)*allianceIncrX + alliance8TextX + 18;
             t.setX(currX);
             t.setY(currY);
             currNum++;

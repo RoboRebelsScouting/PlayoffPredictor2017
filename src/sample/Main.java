@@ -78,8 +78,6 @@ public class Main extends Application {
     public List<Text> alliance8TextList = new ArrayList<Text>();
     public List<Text> robotTextList = new ArrayList<Text>();
 
-
-
     public Text predictedScore1;
     public Text predictedScore2;
     public Text predictedScore3;
@@ -2734,7 +2732,7 @@ public class Main extends Application {
         alliance6Target.toBack();
         alliance7Target.toBack();
         alliance8Target.toBack();
-        robotTarget.toBack();;
+        robotTarget.toBack();
         primaryStage.show();
     }
     // Display Alliance 1 Stats
